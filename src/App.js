@@ -9,35 +9,48 @@ function App() {
   const [questions, setQuestions] = useState([])
   const [score, setScore] = useState(0)
   const [errorMessage, setErrorMessage] = useState('')
+  const [showAnswer, setShowAnswer] = useState(false)
 
   const findCorrectAnswer = question => {
     return question.choices.find(choice => choice.correct)
   }
 
   const answerQuestion = answer => {
+    if (showAnswer) return
     if (answer.correct) {
       setErrorMessage('')
       setScore(score + 1)
     } else {
-      setErrorMessage(`Nesprávna odpoveď! Správna odpoveď je: ${findCorrectAnswer(questions[currentQuestion]).text}`)
-      return
+      // setErrorMessage(`Nesprávna odpoveď! Správna odpoveď je: ${findCorrectAnswer(questions[currentQuestion]).text}`)
     }
 
+    setShowAnswer(true)
+  }
+
+  const setUpQuestion = q => {
+    setCurrentQuestion(q)
+    questions[q].choices.sort(() => 0.5 - Math.random())
+  }
+
+  const doStartGame = () => {
+    setScore(0)
+    setShowAnswer(false)
+    setErrorMessage('')
+    setQuestions(Questions.sort(() => 0.5 - Math.random()).slice(0, 60))
+    setStartGame(true)
+    setUpQuestion(0)
+  }
+
+  const doNextQuestion = () => {
     const nextQuestion = currentQuestion + 1
     if (nextQuestion < questions.length) {
-      setCurrentQuestion(nextQuestion)
+      setUpQuestion(nextQuestion)
     } else {
       setErrorMessage(`Z ${questions.length} otázok bolo zodpovedaných správne ${score} otázok.`)
       setStartGame(false)
     }
-  }
 
-  const doStartGame = () => {
-    setCurrentQuestion(0)
-    setScore(0)
-    setErrorMessage('')
-    setQuestions(Questions.sort(() => 0.5 - Math.random()).slice(0, 60))
-    setStartGame(true)
+    setShowAnswer(false)
   }
 
   return (
@@ -62,42 +75,28 @@ function App() {
               <p class="text-2xl">{questions[currentQuestion].question}</p>
             </div>
             <br/>
-            <br/>
-            <div class="flex justify-center">
-              <div class="w-220 rounded-lg border border-gray-200 text-gray-900">
+            <div class="flex justify-center space-y-2 flex-col">
             {
               questions[currentQuestion].choices.map((choice, index) => (
-                <>
+                <div>
                   <button
                     key={index}
                     onClick={() => answerQuestion(choice)}
-                    aria-current="true"
-                    type="button"
-                    class="
-                      text-left
-                      px-6
-                      py-2
-                      text-base
-                      border-b border-gray-200
-                      w-full
-                      rounded-t-lg
-                      bg-blue-600
-                      text-white
-                      cursor-pointer
-                    "
-                  >
+                    class={"text-base h-full p-10 hover:brightness-110 w-full rounded-lg text-white "+(showAnswer && choice.correct ? 'bg-green-700' : showAnswer ? 'bg-red-700' : 'bg-blue-700')}>
                     {choice.text}
                   </button>
-                </>
+                </div>
               ))
             }
-              </div>
+            </div>
+            <div>
+            { showAnswer ? (<button class="bg-green-700 hover:brightness-110 px-5 my-8 py-5 text-white rounded-lg" onClick={() => doNextQuestion()}>Pokračuj!</button>) : null }
             </div>
           </>
           ) : (
-            <>
-              <button class="bg-sky-600 hover:bg-sky-700 px-5 py-3 text-white rounded-lg" onClick={() => doStartGame()}>Začni!</button>
-            </>
+            <div class="flex justify-center">
+              <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame()}>Začni!</button>
+            </div>
           )}
       </main>
     </div>
