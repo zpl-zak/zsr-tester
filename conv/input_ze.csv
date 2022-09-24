@@ -1,0 +1,25 @@
+Ktorý materiál ma najmenší odpor pri rovnakom priereze?|meď|mosadz|hliník
+Odpor (rezistor) slúži:|na zníženie napätia|ako zásobník elektrického náboja|ako usmerňovač
+Čo je komutátor?|rotačný usmerňovač točivých el. strojov|synchrónny elektromotor|zariadenie pre kompenzáciu napätia v sieti
+Diódy označované skratkou LED sú polovodičové súčiastky určené na:|priamu premenu el. energie na svetlo|konštantné meranie teploty telies|usmernenie všetkých pŕudov
+Prúd v obvode na obrázku bude mať priebeh:|pulzujúci|sínusový|jednosmerný|https://user-images.githubusercontent.com/114129453/192090233-f116eb09-ed1e-4493-a705-a1ed3e30aa5e.png
+V ochrannom vodiči:|nesmie byť vypínač ani poistka|môže byť len poistka|môže byť len ochranný vypínač
+Aká je podstata ochrany oddelením obvodov?|že sa pre jednotlivý spotrebič vytvorí prúdový okruh spoľahlivo izolačne oddelený od obvodu rozvodovej sústavy|že sa obvody oddelia samostatnými vypínačmi|že sa obvody prepoja ochranným vodičom
+Nakreslený tranzistor je typu pnp|nie|áno|-|https://user-images.githubusercontent.com/114129453/192090218-c3c5bed0-101c-4608-9c29-a848ae0e94f0.png
+Voltmeter sa pripája k meranému obvodu sériovo|nie|áno|-
+Vnútorný odpor ampérmetra má byť:|čo najmenší|čo najväčší|-
+Transformátor slúži:|na zmenu veľkosti napätia|ako usmerňovač striedavého napätia|ako zásobník elektrickej energie
+Asynchrónny elektromotor je napájaný:|striedavým napätím|jednosmerným napätím|pulzujúcim napätím
+Elektrický výkon jednosmerného obvodu sa vypočíta podľa vzorca:|P=U.I|P=U/R|P=φ/U
+Otáčky asynchrónneho motora je možné zmeniť:|zmenou frekvencie napätia|šuntovaním|odpojením časti vinutia
+Odpojovač slúži na:|odpojenie elektrického obvodu bez výkonu|skratovanie elektrického obvodu|rozpojenie elektrického obvodu pod výkonom
+Zapojením odporov (rezistorov) do série, sa celkový odpor:|zvýší|zníži|nezmení
+Tyristor je:|štvorvrstvový polovodičový prvok|trojvrstvový polovodičový prvok|dvojvrstvový polovodičový prvok
+Pri prechode jednosmerného prúdu cez cievku, má táto:|málý odpor|veľký odpor|-
+Elektrický prúd vzniká:|pohybom vodiča v magnetickom poli|pôsobením kapacitného náboja na vodič|zmenou prierezu vodiča
+Otáčky jednosmerného sériového motora je možné zmeniť:|zmenou veľkostí napätí|zmenou frekvencie napätia|prepínaním do hviezdy - trojuholníka
+Na výrobu polovodičových prvkov sa najčastejšie používa:|germanium, kremík|striebro, hliník|meď, olovo
+Ktorý vzorec platí pre Ohmov zákon?|I=U/R|A=I.U.t|P=φ.R
+Na rozopnutie výkonového elektrického obvodu sa používa:|stýkač|relé|odpojovač
+Aké schématické značky sú zobrazené na tomto obrázku:|tyristor, transformátor, stýkač, jednosmerný elektromotor|transformátor, tyristor, istič, jednosmerný elektromotor|dióda, transformátor, rezistor, stykač|https://user-images.githubusercontent.com/114129453/192091562-8dddd309-e753-405a-9fe8-022109959bd2.jpg
+Je na obrázku Graetzovo zapojenie diód a časový priebeh napätia?|áno|nie|-|https://user-images.githubusercontent.com/114129453/192091638-bd361d99-2aff-45ec-86e7-c8b51811f02a.png

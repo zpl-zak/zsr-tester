@@ -1052,19 +1052,5 @@ module.exports = [
                 "correct": false
             }
         ]
-    },
-    {
-        "question": "",
-        "choices": [
-            {
-                "correct": true
-            },
-            {
-                "correct": false
-            },
-            {
-                "correct": false
-            }
-        ]
     }
 ]

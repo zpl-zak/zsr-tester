@@ -39,7 +39,7 @@ function App() {
     if (nextQuestion < questions.length) {
       setUpQuestion(nextQuestion)
     } else {
-      setErrorMessage(`Z ${questions.length} otázok bolo zodpovedaných správne ${score} otázok.`)
+      setErrorMessage(`Z ${questions.length} otázok bolo zodpovedaných správne ${score} otázok. ${(score / questions.length < 0.75) ? "To si dojebal!" : "Gratulujem!"}`)
       setStartGame(false)
     }
 
@@ -64,7 +64,7 @@ function App() {
                 Skóre: {score}
               </p>
               <hr class="my-6 border-gray-300" />
-              <p>Otázka {currentQuestion + 1}</p>
+              <p>Otázka {currentQuestion + 1} z {questions.length}</p>
               <p class="text-2xl">{questions[currentQuestion].question}</p>
               <div class="flex justify-center mt-6">
                 {questions[currentQuestion].image ? (
@@ -76,6 +76,7 @@ function App() {
             <div class="flex justify-center space-y-2 flex-col">
             {
               questions[currentQuestion].choices.map((choice, index) => (
+                choice.text === '-' ? null : (
                 <div>
                   <button
                     key={index}
@@ -84,7 +85,7 @@ function App() {
                     {choice.text}
                   </button>
                 </div>
-              ))
+                )))
             }
             </div>
             <div>
@@ -94,7 +95,7 @@ function App() {
           ) : (
             <div class="flex justify-center">
               <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('zsr.js')}>Začni ŽSR!</button>
-              <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('ze.js')}>Začni ŽE!</button>
+              <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('ze.js')}>Začni ZE!</button>
             </div>
           )}
       </main>
