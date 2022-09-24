@@ -1,6 +1,5 @@
 import './App.css';
 import React, { useState } from 'react';
-import Questions from './Questions.js';
 
 function App() {
 
@@ -11,17 +10,11 @@ function App() {
   const [errorMessage, setErrorMessage] = useState('')
   const [showAnswer, setShowAnswer] = useState(false)
 
-  const findCorrectAnswer = question => {
-    return question.choices.find(choice => choice.correct)
-  }
-
   const answerQuestion = answer => {
     if (showAnswer) return
     if (answer.correct) {
       setErrorMessage('')
       setScore(score + 1)
-    } else {
-      // setErrorMessage(`Nesprávna odpoveď! Správna odpoveď je: ${findCorrectAnswer(questions[currentQuestion]).text}`)
     }
 
     setShowAnswer(true)
@@ -32,11 +25,11 @@ function App() {
     questions[q].choices.sort(() => 0.5 - Math.random())
   }
 
-  const doStartGame = () => {
+  const doStartGame = path => {
     setScore(0)
     setShowAnswer(false)
     setErrorMessage('')
-    setQuestions(Questions.sort(() => 0.5 - Math.random()).slice(0, 60))
+    setQuestions((require(`./${path}`)).sort(() => 0.5 - Math.random()).slice(0, 60))
     setStartGame(true)
     setUpQuestion(0)
   }
@@ -56,7 +49,7 @@ function App() {
   return (
     <div className="App">
         <main class="my-0 mx-auto max-w-3xl text-center">
-        <h2 class="p-6 text-4xl">ŽSR Quiz</h2>
+        <h2 class="p-6 text-4xl">Quiz</h2>
         {errorMessage.length ? (
         <div class="bg-blue-100 rounded-lg py-5 px-6 mb-4 text-base text-blue-700 mb-3" role="alert">
           Hláška: {errorMessage}
@@ -73,6 +66,11 @@ function App() {
               <hr class="my-6 border-gray-300" />
               <p>Otázka {currentQuestion + 1}</p>
               <p class="text-2xl">{questions[currentQuestion].question}</p>
+              <div class="flex justify-center mt-6">
+                {questions[currentQuestion].image ? (
+                  <img src={questions[currentQuestion].image} alt="Obrázok" class="my-6" />
+                ) : null}
+              </div>
             </div>
             <br/>
             <div class="flex justify-center space-y-2 flex-col">
@@ -95,7 +93,8 @@ function App() {
           </>
           ) : (
             <div class="flex justify-center">
-              <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame()}>Začni!</button>
+              <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('zsr.js')}>Začni ŽSR!</button>
+              <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('ze.js')}>Začni ŽE!</button>
             </div>
           )}
       </main>
