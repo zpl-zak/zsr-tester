@@ -29,7 +29,7 @@ function App() {
     setScore(0)
     setShowAnswer(false)
     setErrorMessage('')
-    setQuestions((require(`./${path}`)).sort(() => 0.5 - Math.random()).slice(0, 60))
+    setQuestions((require(`./${path}`)).sort(() => 0.5 - Math.random()).slice(0, 40))
     setStartGame(true)
     setUpQuestion(0)
   }
