@@ -48,8 +48,8 @@ function App() {
 
   return (
     <div className="App">
-        <main class="my-0 mx-auto max-w-3xl text-center">
-        <h2 class="p-6 text-4xl">Quiz</h2>
+        <main class="my-0 mx-auto max-w-screen-lg text-center">
+        <h2 class="p-6 text-4xl">{startGame ? (`Skóre: ${score}`) : ("Quiz")}</h2>
         {errorMessage.length ? (
         <div class="bg-blue-100 rounded-lg py-5 px-6 mb-4 text-base text-blue-700 mb-3" role="alert">
           Hláška: {errorMessage}
@@ -59,13 +59,8 @@ function App() {
         {startGame ? (
           <>
             <div class="p-6 shadow-lg rounded-lg bg-gray-100 text-gray-700">
-              <h2 class="font-semibold text-3xl mb-5">Priebeh Quizu</h2>
-              <p class="text-lg">
-                Skóre: {score}
-              </p>
-              <hr class="my-6 border-gray-300" />
               <p>Otázka {currentQuestion + 1} z {questions.length}</p>
-              <p class="text-2xl">{questions[currentQuestion].question}</p>
+              <p class="text-base font-bold">{questions[currentQuestion].question}</p>
               <div class="flex justify-center mt-6">
                 {questions[currentQuestion].image ? (
                   <img src={questions[currentQuestion].image} alt="Obrázok" class="my-6" />
@@ -81,7 +76,7 @@ function App() {
                   <button
                     key={index}
                     onClick={() => answerQuestion(choice)}
-                    class={"text-base h-full p-10 hover:brightness-110 w-full rounded-lg text-white "+(showAnswer && choice.correct ? 'bg-green-700' : showAnswer ? 'bg-red-700' : 'bg-blue-700')}>
+                    class={"text-sm p-1 hover:brightness-110 w-full rounded-lg text-white "+(showAnswer && choice.correct ? 'bg-green-700' : showAnswer ? 'bg-red-700' : 'bg-blue-700')}>
                     {choice.text}
                   </button>
                 </div>
