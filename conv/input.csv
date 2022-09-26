@@ -35,9 +35,7 @@ Dopravná koľaj v priľahlom obvode výhybiek sa smie prechádzať rýchlosťou
 *Ako sú označené stožiare (označovacie pásy) oddielových návestidiel na trati s automatickým blokom? (Z1 čl.0050)|bielym pásom bez orámovania|červenými a bielymi pásmi rovnakej šírky|červenými a bielými, pričom biele pásy majú približne polovičnú výšku pásov červených
 *Čo návestí samostatná svetelná predzvesť? (Z1 čl.0054)|návestí aká smie byť najvyššia rýchlosť pri nasledujúcom návestidle|či smie vlak ísť za návestidlo a akou rýchlosťou|rýchlosť pre obvod výhubiek priľahlý k hlavnému návestidlu
 *Čo návestí hlavné návestidlo v stanici s rýchlostnou návestnou sústavou? (Z1 čl.0054)|návestí rýchlosť pre obvod výhybiek priľahlý k hlavnému návestidlu|návestí rýchlosť ktorá musí byť dodržaná v celom medzistaničnom úseku|návestí rýchlosť ktorá musí byť dodržaná v obvode stanice a prvom priľahlom traťovom úseku
-*V Zošitovom cestovnom poriadku je vedľa stanice značka "P". Akou rýchlosťou môže 
-odchádzať vlak z takejto stanice, ak odchádza z ktorejkoľvek koľaje iným ako priamym 
-smerom? (Z1 čl.0055)|rýchlosťou najviac 40 km/h|rýchlosťou najviac 30 km/h|rýchlosťou podľa návestného znaku hlavného návestidla
+*V Zošitovom cestovnom poriadku je vedľa stanice značka "P". Akou rýchlosťou môže odchádzať vlak z takejto stanice, ak odchádza z ktorejkoľvek koľaje iným ako priamym smerom? (Z1 čl.0055)|rýchlosťou najviac 40 km/h|rýchlosťou najviac 30 km/h|rýchlosťou podľa návestného znaku hlavného návestidla
 *Ako sa označia stanice s nezávislými návestidlami v tabelárnom cestovnom poriadku? (Z1 čl.0056)|v stĺpci 2 značkou "N"|v stĺpci 2 značkou "P"|v stĺpci 2 značkou "S"
 *Ako sa označia stanice bez odchodových návestidiel v tabelárnom cestovnom poriadku? (Z1 čl.0056)|v stĺpci 2 značkou "B"|v stĺpci 2 značkou "N"|v stĺpci 2 značkou "S"
 *Ako sa označia stanice so skupinovým odchodovým návestidlom v tabelárnom cestovnom poriadku? (Z1 čl.0056)|v stĺpci 2 značkou "S"|v stĺpci 2 značkou "B"|v stĺpci 2 značkou "P"
@@ -250,8 +248,7 @@ Návesti dávané za vlakovej dopravy rádiovým zariadením musí príjímajúc
 *Kto smie riadiť posun? (Z1 čl.0481)|len jeden oprávnený zamestnanec - vedúci posunu|aj viac zamestnancov, ale len pri jednoduchom posune|zamestnanec, ktorý je určený výpravcom
 *Kto je označený Červenou páskou na ochrannej prilbe? (Z1 čl.0482)|vedúci posunu samostatných posunovacích čiat|každý zamestnanec oprávnený riadiť posun|zamestnanec oprávnený riadiť jednoduchý posun
 Ak prevezme riadenie posunu iný oprávnený zamestnanec:|vyrozumejú sa všetci zamestnanci zúčastnení na posune o tom, kto bude riadiť ďalší posun|nerobia sa žiadne opatrenia|výpravca zapíše zmenu do Dopravného denníka
-*Aké zásady musia byť dodržané pri posune s HKV elektrickej trakcie so zdvihnutým zberačom, keď sa vykonáva posun na koľaje bez trakčného vedenia, prípadne s vypnutým trakčným vedením? (Z1 čl.0487)|je potrebné medzi HKV a posunované vozne pridať dostatočný počet vozňov, aby bol tento posun 
-možný|je takýto posun zakázaný|nerobia sa žiadne osobitné opatrenia
+*Aké zásady musia byť dodržané pri posune s HKV elektrickej trakcie so zdvihnutým zberačom, keď sa vykonáva posun na koľaje bez trakčného vedenia, prípadne s vypnutým trakčným vedením? (Z1 čl.0487)|je potrebné medzi HKV a posunované vozne pridať dostatočný počet vozňov, aby bol tento posun možný|je takýto posun zakázaný|nerobia sa žiadne osobitné opatrenia
 Na tratiach s trakčným vedením pri posune s HKV elektrickej trakcie so zdvihnutým zberačom musia byť dodržané nasledovné zásady:|vypnuté trakčné vedenie nesmie byť zapnuté prv, než bude zaistené, aby nedošlo k ohrozeniu zamestnancov pri posune|vypnuté trakčné vedenie sa môže kedykoľvek zapnúť|vypnuté trakčné vedenie sa môže zapnúť až po súhlase elektrodispečera
 Úsekové deliče, ktoré oddeľujú trolejové vedenie pod napätím od trolejového vedenia bez napätia, HKV elektrickej trakcie:|smú prechádzať len so stiahnutým zberačom|smú prechádzať len so zdvihnutým zberačom|nesmú vôbec prechádzať
 Stanica leží na spáde väčšom ako 2,5 promile. Do akej vzdialenosti pred týmto spádom je dovolené posunovať s vozidlami bez ich pripojenia na HKV?|50 metrov|15 metrov|100 metrov
@@ -305,7 +302,6 @@ Pri žiadosti o súhlas na jazdu PMD sa musia výpravcovi susednej stanice ozná
 Ak zamestnanec dostane ústny rozkaz v prípadoch, pre ktoré je nariadený písomný rozkaz musí:|trvať na vydaní písomného rozkazu|potvrdiť, že ústnemu rozkazu rozumel|vždy tento ústny rozkaz opakovať
 *Zamestnanec, ktorý písomný rozkaz preberá je povinný:; (Z1 čl.0653)|prečítať si ho ešte pred potvrdením prevzatia, prípadné nezrovnalosti sa musia ihneď odstrániť|prečítať si ho ešte pred odchodom vlaku a prípadne požiadať o odstránenie nezrovnalostí|požiadať doručovateľa aby mu ho prečítal, ak sa vyskytnú nezrovnalosti odmietne jeho prevzatie
 *Je platný písomný rozkaz s odtlačkom pečiatky stanice a podpisom zamestnanca, ktorý ho napísal, i keď nie je napísaný na predpísanom tlačive? (Z1 čl.0655)|áno, ak je vyhotovený podľa predpísaného vzoru a s počtom rovnopisov. Prvopis sa vlepí do príslušného zväzku rozkazov|nie je platný|je platný, ak to povolil schvaľovateľ Prevádzkového poriadku. Priepis sa vlepí do príslušného zväzku rozkazov.
-*Ktoré tlačivo patrí medzi písomné rozkazy? (Z1 čl.0655)|"Všeobecný rozkaz s predtlačou" (V)|odpoved|odpoved
 Ako písomné rozkazy sa používajú tlačivá:|"rozkaz pre PMD"|"Rozkaz Rv"|"Všeobecný rozkaz pre trať s diaľkovým zabezpečovacím zariadením" (V)
 Ako písomné rozkazy sa používajú tlačivá:|"Rozkaz na opatrnú jazdu" (Op)|"Rozkaz o križovaní" (K)|"Príkaz vlakvedúceho" (Pv)
 Texty (rukopisné, nálepky, tlač) na všetkých listoch v písomných rozkazoch musia byť umiestnené:|vodorovne|zvisle|šikmo

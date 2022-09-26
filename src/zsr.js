@@ -666,37 +666,7 @@ module.exports = [
         ]
     },
     {
-        "question": "*V Zošitovom cestovnom poriadku je vedľa stanice značka \"P\". Akou rýchlosťou môže ",
-        "image": null,
-        "choices": [
-            {
-                "correct": true
-            },
-            {
-                "correct": false
-            },
-            {
-                "correct": false
-            }
-        ]
-    },
-    {
-        "question": "odchádzať vlak z takejto stanice, ak odchádza z ktorejkoľvek koľaje iným ako priamym ",
-        "image": null,
-        "choices": [
-            {
-                "correct": true
-            },
-            {
-                "correct": false
-            },
-            {
-                "correct": false
-            }
-        ]
-    },
-    {
-        "question": "smerom? (Z1 čl.0055)",
+        "question": "*V Zošitovom cestovnom poriadku je vedľa stanice značka \"P\". Akou rýchlosťou môže odchádzať vlak z takejto stanice, ak odchádza z ktorejkoľvek koľaje iným ako priamym smerom? (Z1 čl.0055)",
         "image": null,
         "choices": [
             {
@@ -4531,30 +4501,15 @@ module.exports = [
         "image": null,
         "choices": [
             {
-                "text": "je potrebné medzi HKV a posunované vozne pridať dostatočný počet vozňov, aby bol tento posun ",
+                "text": "je potrebné medzi HKV a posunované vozne pridať dostatočný počet vozňov, aby bol tento posun možný",
                 "correct": true
             },
-            {
-                "correct": false
-            },
-            {
-                "correct": false
-            }
-        ]
-    },
-    {
-        "question": "možný",
-        "image": null,
-        "choices": [
             {
                 "text": "je takýto posun zakázaný",
-                "correct": true
+                "correct": false
             },
             {
                 "text": "nerobia sa žiadne osobitné opatrenia",
-                "correct": false
-            },
-            {
                 "correct": false
             }
         ]
@@ -5509,24 +5464,6 @@ module.exports = [
             },
             {
                 "text": "je platný, ak to povolil schvaľovateľ Prevádzkového poriadku. Priepis sa vlepí do príslušného zväzku rozkazov.",
-                "correct": false
-            }
-        ]
-    },
-    {
-        "question": "*Ktoré tlačivo patrí medzi písomné rozkazy? (Z1 čl.0655)",
-        "image": null,
-        "choices": [
-            {
-                "text": "\"Všeobecný rozkaz s predtlačou\" (V)",
-                "correct": true
-            },
-            {
-                "text": "odpoved",
-                "correct": false
-            },
-            {
-                "text": "odpoved",
                 "correct": false
             }
         ]
