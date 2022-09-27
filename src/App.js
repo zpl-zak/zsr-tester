@@ -25,11 +25,11 @@ function App() {
     questions[q].choices.sort(() => 0.5 - Math.random())
   }
 
-  const doStartGame = path => {
+  const doStartGame = (path, maxQuestions=40) => {
     setScore(0)
     setShowAnswer(false)
     setErrorMessage('')
-    setQuestions((require(`./${path}`)).sort(() => 0.5 - Math.random()).slice(0, 40))
+    setQuestions((require(`./${path}`)).sort(() => 0.5 - Math.random()).slice(0, maxQuestions))
     setStartGame(true)
     setUpQuestion(0)
   }
@@ -39,7 +39,7 @@ function App() {
     if (nextQuestion < questions.length) {
       setUpQuestion(nextQuestion)
     } else {
-      setErrorMessage(`Z ${questions.length} otázok bolo zodpovedaných správne ${score} otázok. ${(score / questions.length < 0.75) ? "To si dojebal!" : "Gratulujem!"}`)
+      setErrorMessage(`Z ${questions.length} otázok bolo zodpovedaných správne ${score} (${(score/questions.length) * 100.0}%) otázok. ${(score / questions.length < 0.75) ? "To si dojebal!" : "Gratulujem!"}`)
       setStartGame(false)
     }
 
@@ -89,7 +89,8 @@ function App() {
           </>
           ) : (
             <div class="flex justify-center">
-              <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('zsr.js')}>Začni ŽSR!</button>
+              <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('zsr.js')}>Začni ŽSR! (40 otázok)</button>
+              <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('zsr.js', 9999)}>Začni ŽSR!</button>
               <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('ze.js')}>Začni ZE!</button>
             </div>
           )}
