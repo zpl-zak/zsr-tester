@@ -310,7 +310,7 @@ module.exports = [
         "image": null,
         "choices": [
             {
-                "text": "málý odpor",
+                "text": "malý odpor",
                 "correct": true
             },
             {

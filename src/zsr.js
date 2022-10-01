@@ -595,7 +595,7 @@ module.exports = [
     },
     {
         "question": "*Hlavné návestidlá, ktorých návesť Stoj, platí len pre vlaky a neplatí pre posun sú s výnimkou oddielových návestidiel automatického bloku označené na stožiari (označovacom páse): (Z1 čl.0050)",
-        "image": "červenými a bielymi pruhmi rovnakej výšky",
+        "image": null,
         "choices": [
             {
                 "text": "červenými a bielymi pásmi rovnakej výšky",
@@ -1056,7 +1056,7 @@ module.exports = [
                 "correct": false
             },
             {
-                "text": "umiestni sa ihneď na jeho mieste návesť 51a, \"Stoj\", ktorá môže byť doplnená privolávacím návestidlom. O týcho mimoriadnostiach musí byť rušnovodič vyrozumený písomným rozkazom ",
+                "text": "umiestni sa ihneď na jeho mieste návesť 51a, \"Stoj\", ktorá môže byť doplnená privolávacím návestidlom. O týcho mimoriadnostiach musí byť rušnovodič vyrozumený písomným rozkazom",
                 "correct": false
             }
         ]
@@ -1632,22 +1632,7 @@ module.exports = [
                 "correct": false
             },
             {
-                "text": "až zistí",
-                "correct": false
-            }
-        ]
-    },
-    {
-        "question": "(pochôdzkou), či vozidlá vlaku na susednej koľaji sú v poriadku",
-        "image": null,
-        "choices": [
-            {
-                "correct": true
-            },
-            {
-                "correct": false
-            },
-            {
+                "text": "až zistí(pochôdzkou), či vozidlá vlaku na susednej koľaji sú v poriadku",
                 "correct": false
             }
         ]
@@ -2547,7 +2532,7 @@ module.exports = [
                 "correct": false
             },
             {
-                "text": "upraviť jazdu posunujúceho HKV tak, aby sa mohli odraziť posunované vozidla ",
+                "text": "upraviť jazdu posunujúceho HKV tak, aby sa mohli odraziť posunované vozidla",
                 "correct": false
             }
         ]
@@ -3177,7 +3162,7 @@ module.exports = [
                 "correct": false
             },
             {
-                "text": "žltá zastávka alebo obdlžníková doska žltej farby z materiálu odrážajúceho svetlo na zadnej strane posledného vozidla jednotlivých častí vpravo",
+                "text": "žlté svetlo alebo obdlžníková doska žltej farby z materiálu odrážajúceho svetlo na zadnej strane posledného vozidla jednotlivých častí vpravo",
                 "correct": false
             }
         ]
@@ -3195,7 +3180,7 @@ module.exports = [
                 "correct": false
             },
             {
-                "text": "žltá zastávka alebo obdlžníková doska žltej farby z materiálu odrážajúceho svetlo na zadnej strane posledného vozidla jednotlivých častí vpravo",
+                "text": "žlté svetlo alebo obdlžníková doska žltej farby z materiálu odrážajúceho svetlo na zadnej strane posledného vozidla jednotlivých častí vpravo",
                 "correct": false
             }
         ]
@@ -7012,6 +6997,2310 @@ module.exports = [
             },
             {
                 "text": "\"Áno, s jazdou vlaku ... (číslo) súhlasím ... (priezvisko dispečera)",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Rušňovodič vlaku na trati so zjednodušeným riadením dopravy žida o súhlas na jazdu slovami:",
+        "image": null,
+        "choices": [
+            {
+                "text": "\"Smie odísť vlak ... (číslo) o ... h ... min z ... do ... (názvy dopravní) ... (priezvisko rušňovodiča)\"",
+                "correct": true
+            },
+            {
+                "text": "\"Môže odísť vlak ... (číslo) z/do ... (názvy dopravní) o ... h ... min? (Priezvisko rušňnovodiča)\"",
+                "correct": false
+            },
+            {
+                "text": "\"Tu rušňovodič vlaku ... (priezvisko rušňovodiča). Smie odísť vlak ... (číslo) o ... h ... min z ... do ... (názvy dopravní)?\"",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Rušňovodič dispečerovi na trati soz jednodušeným riadením dopravy ohlási príchod vlaku do dopravne len čo sa presvedčí, že vlak uvoľnil: (Z1 čl.1076)",
+        "image": null,
+        "choices": [
+            {
+                "text": "zadný námedzník",
+                "correct": true
+            },
+            {
+                "text": "predný námedzník",
+                "correct": false
+            },
+            {
+                "text": "poslednú výhybku",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*V dopravni na trati so zjednodušeným riadením dopravy, smie rušňovodič pri hlásení príchodu žiadať zároveň aj o súhlas na odchod ak: (Z1 čl.1077)",
+        "image": null,
+        "choices": [
+            {
+                "text": "nepríde ku križovaniu ani predchodeniu vlakov a vlak nemá v dopravni väčší pobyt ako 5 minút",
+                "correct": true
+            },
+            {
+                "text": "vlak príde do dopravne zmeškaný najviac o 5 minút",
+                "correct": false
+            },
+            {
+                "text": "vlak príde do dopravne s náskokom",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Dispečer na trati so zjednodušeným riadením dopravy informuje o mimoriadne zavedenom vlaku rušňovodičov vlakov, ktoré: (Z1 čl.1079)",
+        "image": null,
+        "choices": [
+            {
+                "text": "ho stihnú križovaním, predchodením alebo dostihnutím",
+                "correct": true
+            },
+            {
+                "text": "idú v čase jeho jazdy na celej trati",
+                "correct": false
+            },
+            {
+                "text": "sú sprevádzané vlakovým personálom",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Druhý vlak na tratiach so zjednodušeným riadením dopravy má v druhom stĺpci ZCP značku: (Z1 čl.1082)",
+        "image": null,
+        "choices": [
+            {
+                "text": "lichobežníkovej tabuľky",
+                "correct": true
+            },
+            {
+                "text": "trojuholníka",
+                "correct": false
+            },
+            {
+                "text": "so symbolom dennej výpravky",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Dispečer na tratiach so zjednodušeným riadením dopravy, ak zmení poradie vchodov vlakov, vyrozumie rušňovodičov:",
+        "image": null,
+        "choices": [
+            {
+                "text": "\"Všeobecným rozkazom\" (V)",
+                "correct": true
+            },
+            {
+                "text": "\"Rozkazom o križovaní\" (K)",
+                "correct": false
+            },
+            {
+                "text": "\"Príkazom dispečera\" (P)",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*O zmenenom poradí vchodov vlakov do dopravne na tratiach so zjednodušeným riadením dopravy musí dispečer vyrozumieť najskôr rušňovodiča toho vlaku, ktorý má: (Z1 čl.1084)",
+        "image": null,
+        "choices": [
+            {
+                "text": "postupovať ako druhý vlak",
+                "correct": true
+            },
+            {
+                "text": "postupovať ako prvý vlak",
+                "correct": false
+            },
+            {
+                "text": "zrušenú ohlasovaciu povinnosť",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Zastavenie pri lichobežníkovej tabuľke na tratiach so zjednoušeným riadením dopravy nariadi dispečer rušňovodičovi:",
+        "image": null,
+        "choices": [
+            {
+                "text": "vždy, ak je na to dôvod",
+                "correct": true
+            },
+            {
+                "text": "len pri predchádzaní druhého vlaku",
+                "correct": false
+            },
+            {
+                "text": "len pri prestavení pracovného vlaku na manipulačnú koľaj",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Na tratiach so zjednodušeným riadením dopravy smie rušňovodič prvého vlaku vojsť do dopravne bez zastavenia pri lichobežníkovej tabuľke: (Z1 čl.1086)",
+        "image": null,
+        "choices": [
+            {
+                "text": "(ak mu dispečer nenariadil rozkazom V, aby postupoval ako \"druhý vlak\"",
+                "correct": true
+            },
+            {
+                "text": "len ak v nej bude posunovať",
+                "correct": false
+            },
+            {
+                "text": "ak má dispečerom nariadené aby postupoval ako \"druhý vlak\"",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Môže byť dovolený vchod vlaku do dopravne na trati so zjednodušeným riadením aj rádiotelefonicky? (Z1 čl.1087)",
+        "image": null,
+        "choices": [
+            {
+                "text": "áno",
+                "correct": true
+            },
+            {
+                "text": "nie",
+                "correct": false
+            },
+            {
+                "text": "len za podmienky, že to určí dispečer rozkazom \"V\"",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Značka lichobežníkovej tabuľky na tratiach so zjednodušeným riadením dopravy v dopravniach so samovratnými výhybkami:",
+        "image": null,
+        "choices": [
+            {
+                "text": "sa nevádza",
+                "correct": true
+            },
+            {
+                "text": "je uvedená v stĺpci 2 ZCP",
+                "correct": false
+            },
+            {
+                "text": "je uvedená v stĺpci 2a ZCP",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Pri jazde mimoriadneho vlaku na trati so zjednodušeným riadením dopravy, poradie vchodu vlakov do dopravne v ktorej sa stretnú pri križovaní alebo prechodení určí:",
+        "image": null,
+        "choices": [
+            {
+                "text": "dispečer",
+                "correct": true
+            },
+            {
+                "text": "výpravca prípojnej stanice",
+                "correct": false
+            },
+            {
+                "text": "prednosta riadiacej stanice",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Ako postupuje rušňovodič, ak zastavil vlak pre poruchu HKV a predpokladá,že sa mu nepodarí odstrániť poruchu? (Z1 čl.1115)",
+        "image": null,
+        "choices": [
+            {
+                "text": "vyžiada si pomocné HKV",
+                "correct": true
+            },
+            {
+                "text": "vyžiada si pomoc návesťou \"Zvolávanie všetkých zamestnancov\"",
+                "correct": false
+            },
+            {
+                "text": "rozsvieti ihneď jedno červené svetlo na prednom čele HKV a ostatné zhasne",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Ak nemôže vlak so sprevádzajúcimp ersonálom pokračovať v ďalšej jazde po nepredpokladanom zastavení vlaku na trati, dá rušňovodič podľa potreby návesť: (Z1 čl.1116)",
+        "image": null,
+        "choices": [
+            {
+                "text": "\"Zabrzdite úplne\"",
+                "correct": true
+            },
+            {
+                "text": "\"Zabrzdite mierne\"",
+                "correct": false
+            },
+            {
+                "text": "\"Povoľte brzdy úplne\"",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Aký je postup pri odchode vlaku z trate, po mimoriadnom zastavení vlaku na šírej trati ak pominul dôvod zastavenia a rušňovodič privolal člena sprevádzajúceho personálu? (Z1 čl.1117)",
+        "image": null,
+        "choices": [
+            {
+                "text": "pred odchodom z trate sa zachová celý postup predpísaný pre výpravu vlaku vlakovým personálom",
+                "correct": true
+            },
+            {
+                "text": "na pokračovanie v jazde si vyžiada súhlas od regionálneho dispečera",
+                "correct": false
+            },
+            {
+                "text": "pokračuje v jazde bez ďalších dopravných opatrení",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Ak po mimoriadnom zastavení vlaku na šírej trati pominul dôvod zastavenia a rušňovodič neprivolal člena sprevádzajúceho personálu, rušňovodič:",
+        "image": null,
+        "choices": [
+            {
+                "text": "pokračuje v jazde",
+                "correct": true
+            },
+            {
+                "text": "pred odchodom z trate sa zachová postup predpísaný pre výpravu vlaku",
+                "correct": false
+            },
+            {
+                "text": "na pokračovanie v jazde si vyžiada súhlas od regionálneho dispečera",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Ak rušňovodič (sprevádzajúci personál), spozoruje, že by iný vlak mohol byť ohrozený poruchou koľaje, trakčného vedenia a pod. a nie je možné spojenie s výpravcom: (Z1 čl.1118)",
+        "image": null,
+        "choices": [
+            {
+                "text": "pokračuje v ďalšej jazde k najbližšiemu telefónu. Ak spozoruje, že sa blíži vlak idúci smerom k tomuto miestu, dá ihneď návesť \"Stoj, protiidúcim dráhovým vozidlám\" a zastaví svoj vlak",
+                "correct": true
+            },
+            {
+                "text": "počas ďalšej jazdy dáva nepretržite návesť \"Pozor\"",
+                "correct": false
+            },
+            {
+                "text": "zaistí vlak proti samovoľnému pohybu a odoberie sa k najbližšiemu telefónu, aby poruchu ohlásil regionálnemu dispečerovi",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Ak jazda vlaku nie je dovolená alebo je ohrozená, rušňovodič (sprevádzajúci personál):",
+        "image": null,
+        "choices": [
+            {
+                "text": "všetkými dostupnými prostriedkami zastaví vlak a prípad ohlási výpravcovi jednej zo susedných staníc",
+                "correct": true
+            },
+            {
+                "text": "označí vedúce HKV jedným žltým svetlom nad pravým nárazníkom, pokračuje v ďalšej jazde podľa rozhľadu a ohlási prípad regionálnemu dispečerovi",
+                "correct": false
+            },
+            {
+                "text": "posledné vozidlo vlaku označí jedným červeným svetlom nad pravým nárazníkom, pokračuje v ďalšej jazde podľa rozhľadu a ohlási prípad výpravcovi jednej zo susedných staníc",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Kedy môže rušňovodič vedúceho HKV uviesť vlak do pohybu a pokračovať v jazde, ak privolal rušňovodiča postrkového HKV? (Z1 čl.1124)",
+        "image": null,
+        "choices": [
+            {
+                "text": "len keď dostane od rušňovodiča postrkového HKV návesť \"Povoľte brzdy úplne\"",
+                "correct": true
+            },
+            {
+                "text": "len keď nepochybne zistí, že vlak je celý a na susednej koľaji nie je žiadna prekážka",
+                "correct": false
+            },
+            {
+                "text": "len keď dostane od rušňovodiča postrkového HKV ručnú návesť \"Brzda v poriadku\"",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Rušňovodič, ktorý ohlásil zastavenie vlaku na trati môže pokračovať v ďalšej jazde len so súhlasom:",
+        "image": null,
+        "choices": [
+            {
+                "text": "výpravcu stanice, do ktorej vlak ide",
+                "correct": true
+            },
+            {
+                "text": "regionálneho dispečera",
+                "correct": false
+            },
+            {
+                "text": "elektrodispečera",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Rušňovodič, ktorý ohlásil zastavenie vlaku na trati a nemôže si vyžiadať súhlas výpravcu na ďalšiu jazdu: (Z1 čl.1126)",
+        "image": null,
+        "choices": [
+            {
+                "text": "smie pokračovať v ďalšej jazde cez priecestia s PZZ, ako cez priecestia, ktoré nebudú uzavreté (uvedené do stavu \"Výstraha\")",
+                "correct": true
+            },
+            {
+                "text": "smie pokračovať v ďalšej jazde aj bez súhlasu výpravcu po najbližšie hlavné návestidlo, rýchlosť 10 km/h nesmie prekročiť",
+                "correct": false
+            },
+            {
+                "text": "nesmie pokračovať v ďalšej jazde, prostredníctvom vhodného zamestnanca si vyžiada písomné pokyny pre ďalší postup",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Ako sa vykoná nepredpokladaný návrat vlaku z obvodu stanice? (Z1 čl.1128)",
+        "image": null,
+        "choices": [
+            {
+                "text": "vždy ako posun, bez zmeny označenia začiatku a konca vlaku",
+                "correct": true
+            },
+            {
+                "text": "postavením spätnej vlakovej cesty na tú koľaj, z ktorej bol vypravený",
+                "correct": false
+            },
+            {
+                "text": "spätnou jazdou ako vlak na návesť \"Priblížiť\"",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Ktoré prípady sa považujú za nepredpokladaný návrat vlaku z trate? (Z1 čl.1130)",
+        "image": null,
+        "choices": [
+            {
+                "text": "keď posledné vozidlo odchádzajúceho vlaku prešlo úroveň vchodového návestidla pre opačný smer jazdy",
+                "correct": true
+            },
+            {
+                "text": "keď posledné vozidlo odchádzajúceho vlaku prešlo úroveň odchodového návestidla",
+                "correct": false
+            },
+            {
+                "text": "keď čelo odchádzajúceho vlaku prešlo úroveň vchodového návestidla pre opačný smer jazdy",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Kto vyrozumie sprevádzajúci personál o tom, akým spôsobom sa bude návrat vlaku z trate vykonávať, pred nepredpokladaným návratom vlaku z trate? (Z1 čl.1131)",
+        "image": null,
+        "choices": [
+            {
+                "text": "rušňovodič",
+                "correct": true
+            },
+            {
+                "text": "výpravca",
+                "correct": false
+            },
+            {
+                "text": "vlakvedúci vlaku",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Ak je vlak bez sprevádzajúceho personálu, nepredpokladaný návrat vlaku z trate (s predchádzajúcim súhlasom výpravcu), sa môže uskutočniť: (Z1 čl.1133)",
+        "image": null,
+        "choices": [
+            {
+                "text": "ak je na konci postrkové HKV, ktorého rušňovodič má možnosť prevziať pri návrate z trate povinnosti vedúceho HKV",
+                "correct": true
+            },
+            {
+                "text": "ak je vo vlaku vložené HKV, ktorého rušňovodič má možnosť prevziať pri návrate z trate povinnosť vedúceho HKV",
+                "correct": false
+            },
+            {
+                "text": "ak je v čele vlaku príprahové HKV, ktorého rušňovodič má možnosť prevziať pri návrate z trate povinnosi vedúceho HKV",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Výpravca musí vyrozumieť rušňovodiča pred nepredpokladaným návratom vlaku z trate: (Z1 čl.1134)",
+        "image": null,
+        "choices": [
+            {
+                "text": "o platnosti (neplatnosti) oddielových návestidiel a o spôsobe, akým bude dovolená jazda vlaku do stanice",
+                "correct": true
+            },
+            {
+                "text": "o tom, či je vyrozumený regionálny dispečer, že sa vlak bude vracať z trate",
+                "correct": false
+            },
+            {
+                "text": "či pôjde v stanici na voľnú, alebo obsadenú koľaj",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Pokiaľ sa môže rušňovodič pri nepredpokladanom návrate vlaku zo šírej trate vrátiť, ak sa nemôže dorozumieť s výpravcom? (Z1 čl.1136)",
+        "image": null,
+        "choices": [
+            {
+                "text": "k najbližšiemu hlavnému návestidlu bez ohľadu na smer pre ktorý platí",
+                "correct": true
+            },
+            {
+                "text": "k najbližšiemu hlavnému návestidlu platnému v smere návratu",
+                "correct": false
+            },
+            {
+                "text": "k hlavnému návestidlu bez ohľadu na smer pre ktorý platí. Ak hlavné návestidlo návesti návesť dovoľujúcu jazdu, môže vlak pokračovať v návrate za hlavné návestidlo k ďalšiemu",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Aké sú potrebné opatrenia, ak sa musí vlak nepredpokladane vrátiť z trate a rušňovodič sa nemôže dorozumieť s výpravcom? (Z1 čl.1138)",
+        "image": null,
+        "choices": [
+            {
+                "text": "rušňovodič vyšle pred vlakom zamestnanca (posla). Vlak smie začať s návratom až po uplynutí 10 minút po odchode posla",
+                "correct": true
+            },
+            {
+                "text": "musí sa vykonať úplná skúška brzdy",
+                "correct": false
+            },
+            {
+                "text": "na prvom tlačenom dráhovom vozidle vlaku musí zmeniť návesť \"Koniec vlaku\" na návesť \"Stoj protiidúcim dráhovým vozidlám\"",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Aký je postup rušňovodiča pri nepredpokladanom návrate vlaku z trate (bez súhlasu výpravcu) ak rušňovodič zastavil pri najbližšom hlavnom návestidle? (Z1 čl.1139)",
+        "image": null,
+        "choices": [
+            {
+                "text": "musí sa dorozumieť s výpravcom a vyžiadať si súhlas na ďalšiu jazdu, inak nesmie pokračovať v ďalšom návrate",
+                "correct": true
+            },
+            {
+                "text": "ak sa nemôže dorozumieť s výpravcom, pokračuje v ďalšej jazde za vyslaným poslom po 10 minútach",
+                "correct": false
+            },
+            {
+                "text": "ak sa nemôže dorozumieť s výpravcom, predpokladá, že nastala jazda podľa rozhľadu a musí označiť prvé tlačené vozidlo návesťou \"Začiatok vlaku idúceho podľa rozhľadu\"",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Môže sa uskutočniť nepredpokladaný návrat vlaku z trate (bez súhlasu výpravcu) na tratiach s automatickým blokom?",
+        "image": null,
+        "choices": [
+            {
+                "text": "nie",
+                "correct": true
+            },
+            {
+                "text": "len po súhlase regionálneho dispečera",
+                "correct": false
+            },
+            {
+                "text": "len ak je na vlaku sprevádzajúci personál",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Ak sa nemožno s výpravcom vopred dohodnúť, nepredpokladaný návrat vlaku z trate je zakázaný: (Z1 čl.1140)",
+        "image": null,
+        "choices": [
+            {
+                "text": "ak má vlak rozkaz Op, časť B pre jazdu podľa rozhľadu a nevezie so sebou povolenku",
+                "correct": true
+            },
+            {
+                "text": "ak má vlak rozkaz Op, časť B pre jazdu podľa rozhľadu a vezie so sebou povolenku",
+                "correct": false
+            },
+            {
+                "text": "ak má vlak rozkaz Op, časť A",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Rušňovodič môže odvážať jednotlivé časti vlaku z trate rýchlosťou: (Z1 čl.1145)",
+        "image": null,
+        "choices": [
+            {
+                "text": "pre ktorú vyhovujú skutočné brzdiace percentá, najmenej pre rýchlosť 15 km/h",
+                "correct": true
+            },
+            {
+                "text": "ako pri jazde podľa rozhľadu",
+                "correct": false
+            },
+            {
+                "text": "ako keby bol vyrozumený rozkazom \"Op, časť B\"",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Pred odchodom každej časti vlaku z trate sa rušňovodič musí presvedčiť:",
+        "image": null,
+        "choices": [
+            {
+                "text": "či je odvážaná časť priebežne brzdená",
+                "correct": true
+            },
+            {
+                "text": "či zostávajúca časť je krytá návesťou \"Stoj\"",
+                "correct": false
+            },
+            {
+                "text": "či o jeho jazde bol vyrozumený výpravca zadnej stanice",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Rušňovodič pri jazde vlaku po častiach na trati s automatickým blokom: (Z1 čl.1147)",
+        "image": null,
+        "choices": [
+            {
+                "text": "riadi sa návesťami oddielových návestidiel",
+                "correct": true
+            },
+            {
+                "text": "musí zastaviť s prvou časťou pred najbližším oddielovým návestidlom, i keď dovoľuje jazdu, odkiaľ oznámi výpravcovi, že vezie len časť vlaku",
+                "correct": false
+            },
+            {
+                "text": "musí vždy zastaviť pred posledným oddielovým návestidlom a dohodnúť s výpravcom vchod do stanice",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Pre jazdy vlaku po častiach na trati s poloautomatickým blokom oddielové návestidlá: ",
+        "image": null,
+        "choices": [
+            {
+                "text": "sa neobsluhujú, okrem jazdy poslednej časti",
+                "correct": true
+            },
+            {
+                "text": "neplatia",
+                "correct": false
+            },
+            {
+                "text": "sa obsluhujú, ale odhlášky sa nedávajú",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Rušňovodič pri odvážaní poslednej časti vlaku pri jazde vlaku po častiach: (Z1 čl.1156)",
+        "image": null,
+        "choices": [
+            {
+                "text": "zastaví pred najbližším oddielovým návestidlom a oznámi strážnikovi oddielu, že ide posledná časť vlaku",
+                "correct": true
+            },
+            {
+                "text": "sa presvedčí, že traťová koľaj zostala voľná a schodná",
+                "correct": false
+            },
+            {
+                "text": "ak je vlak označený správnymi návesťami, nemusí oznámiť výpravcom susedných staníc, strážnikov oddielov a závorárom, že ide posledná časť vlaku",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Ak rušňovodič pri jazde vlaku po častiach oznámil strážnikovi oddielu, že vezie poslednú časť vlaku a ten nemôže odovzdať správu ostatným strážnikom oddielov, oznámi to rušňovodičovi: (Z1 čl.1157)",
+        "image": null,
+        "choices": [
+            {
+                "text": "ústne, ten potom musí zastaviť pred každým oddielovým návestidlom a každého strážnika oddielu vyrozumieť osobitne",
+                "correct": true
+            },
+            {
+                "text": "rozkazom \"Op\", ten potom považuje priecestia s PZZ za zatvorené",
+                "correct": false
+            },
+            {
+                "text": "rozkazom \"V\", ten potom zabezpečí označenie vlaku návesťami pre jazdu vlaku podľa rozhľadu",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Stanice, v ktorých je dovolená jazda zotrvačnosťou sú uvedené v:",
+        "image": null,
+        "choices": [
+            {
+                "text": "Tabuľkách traťových pomerov",
+                "correct": true
+            },
+            {
+                "text": "Zošitovom cestovnom poriadku",
+                "correct": false
+            },
+            {
+                "text": "Prevádzkovom poriadku stanice",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Na vylúčenú koľaj môže byť dovolená len jazda vozidla určeného na: (Z1 čl.1190)",
+        "image": null,
+        "choices": [
+            {
+                "text": "na zistenie zjazdnosti koľaje",
+                "correct": true
+            },
+            {
+                "text": "na obsluhu vlečky na šírej trati",
+                "correct": false
+            },
+            {
+                "text": "na vykonanie skúšobnej jazdy",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Na vylúčenú koľaj môže byť dovolená len jazda vozidla určeného na: (Z1 čl.1190)",
+        "image": null,
+        "choices": [
+            {
+                "text": "vykonanie alebo zabezpečenie prác pri údržbe, oprave, obnove alebo modernizácii stavieb dráhy",
+                "correct": true
+            },
+            {
+                "text": "vykonanie  skúšobnej jazdy",
+                "correct": false
+            },
+            {
+                "text": "obsluhu vlečky na šírej trati",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Na vylúčenú koľaj môže byť dovolená len jazda vozidla určeného na: (Z1 čl.1190)",
+        "image": null,
+        "choices": [
+            {
+                "text": "na odstránenie prekážky spôsobujúcej nezjazdnosť koľaje",
+                "correct": true
+            },
+            {
+                "text": "obsluhu vlečky na šírej trati",
+                "correct": false
+            },
+            {
+                "text": "vykonanie skúšobnej jazdy",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Kto dá rušňovodičovi príkaz na odchod na vylúčenú koľaj? (Z1 čl.1192)",
+        "image": null,
+        "choices": [
+            {
+                "text": "zamestnanec pre riadenie jazdy vozidiel",
+                "correct": true
+            },
+            {
+                "text": "výpravca",
+                "correct": false
+            },
+            {
+                "text": "vedúci posunu samostatných posunovacích čiat",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Pri jazde vozidiel idúcich v slede na vylúčenu koľaj a z vylúčenej koľaje, smie ísť prvé vozidlo alebo spojené vozidlá (traťový stroj, HKV) rýchlosťou maximálne 40 km/h",
+        "image": null,
+        "choices": [
+            {
+                "text": "ak ide na vylúčenu koľaj a z vylúčenej koľaje ako vlak",
+                "correct": true
+            },
+            {
+                "text": "ak rušňovodič vedie dráhové vozidlo s vlastným pohonom z kabíny na čele v smere jazdy a toto vozidlo je v čele posunovaných vozidiel alebo ide samostatne",
+                "correct": false
+            },
+            {
+                "text": "ak sú vozidlá tlačené",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Akou maximálnou rýchlosťou môžu ísť ďalšie posunujúce vozidlá idúce v slede na vylúčenú koľaj, pokiaľ vedúci práce alebo výlukový dokument neurčí rýchlosť nižšiu? (Z1 čl.1195)",
+        "image": null,
+        "choices": [
+            {
+                "text": "15 km/h",
+                "correct": true
+            },
+            {
+                "text": "30 km/h",
+                "correct": false
+            },
+            {
+                "text": "40 km/h",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Posunujúci diel na vylúčenej koľaji zastavil na pracovnom mieste. Začať posun smie vedúci posunu (vlakvedúci) len na rozkaz: (Z1 čl.1198)",
+        "image": null,
+        "choices": [
+            {
+                "text": "vedúceho práce (vedúceho pracoviska)",
+                "correct": true
+            },
+            {
+                "text": "výpravcu",
+                "correct": false
+            },
+            {
+                "text": "zamestnanca oprávneného riadiť sled vozidiel na vylúčenej koľaji",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Z pracovného miesta na vylúčenej koľaji sa má posunovať smerom k východiskovej stanici posunujúcich dielov. Koho súhlas je potrebný pre takýto posun? (Z1 čl.1198)",
+        "image": null,
+        "choices": [
+            {
+                "text": "vedúceho práce i zamestnanca pre riadenie sledu",
+                "correct": true
+            },
+            {
+                "text": "vedúceho posunu (vlakvedúceho)",
+                "correct": false
+            },
+            {
+                "text": "výpravcu východiskovej stanice posunujúcich dielov",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Posun na vylúčenej koľaji proti susednému posunujúcemu dielu sa smie vykonať po súhlase:",
+        "image": null,
+        "choices": [
+            {
+                "text": "vedúceho práce po dohode s vedúcimi pracovísk",
+                "correct": true
+            },
+            {
+                "text": "vedúceho posunu za podmienky, že sa o takomto posune dohodne so všetkými dotknutými rušňovodičmi",
+                "correct": false
+            },
+            {
+                "text": "zamestnanca pre riadenie sledu, po dohode s vedúcimi práce",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Rušňovodič na vylúčenej koľaji pred uvedením posunujúceho dielu do pohybu musí vždy dať návesť: (Z1 čl.1199)",
+        "image": null,
+        "choices": [
+            {
+                "text": "\"Pozor\"",
+                "correct": true
+            },
+            {
+                "text": "\"Povoľte brzdy úplne\"",
+                "correct": false
+            },
+            {
+                "text": "\"Zastavte rušiaci posun\"",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Na prevádzkovanej koľaji smerom ku koľaji vylúčenej je dovolené posunovať: (Z1 čl.1203)",
+        "image": null,
+        "choices": [
+            {
+                "text": "najďalej po návesť 51a \"Stoj\"",
+                "correct": true
+            },
+            {
+                "text": "až po označník",
+                "correct": false
+            },
+            {
+                "text": "najďalej po príslušný námedzník",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Odosielateľ traťového stroja zaradeného do vlaku oznámi dopravcovi: (Z1 čl.1224)",
+        "image": null,
+        "choices": [
+            {
+                "text": "podmienky na dopravu",
+                "correct": true
+            },
+            {
+                "text": "kde sa nachádzajú nákladné listy",
+                "correct": false
+            },
+            {
+                "text": "čas, za ktorý má byť dopravený traťový stroj do cieľovej stanice",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Záchranné práce pri nehodových udalostiach na šírej trati do príchodu zodpovedných zamestnancov ŽSR riadi: (Z1 čl.1246)",
+        "image": null,
+        "choices": [
+            {
+                "text": "vlakový personál",
+                "correct": true
+            },
+            {
+                "text": "železničná polícia",
+                "correct": false
+            },
+            {
+                "text": "zamestnanci stanice",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Ak počas jazdy vlaku dôjde k náhlemu zhoršeniu poveternostných podmienok, ktoré môžu spôsobiť nezjazdnosť trate, rušňovodič: (Z1 čl.1248)",
+        "image": null,
+        "choices": [
+            {
+                "text": "zníži rýchlosť tak, aby mohol bezpečne a včas zastaviť pred prípadnou prekážkou",
+                "correct": true
+            },
+            {
+                "text": "okamžite zvýši rýchlosť, aby čo najskôr došiel do najbližšej stanice",
+                "correct": false
+            },
+            {
+                "text": "pokračuje v ďalšej jazde bez obmedzenia",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Smie rušňovodič v prípade nehodovej udalosti manipulovať s prúžkom mechanického rýchlomeru? (Z1 čl.1249)",
+        "image": null,
+        "choices": [
+            {
+                "text": "nie",
+                "correct": true
+            },
+            {
+                "text": "áno, so súhlasom výpravcu",
+                "correct": false
+            },
+            {
+                "text": "áno, so súhlasom vlakového personálu",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Pomocný vlak sa zavádza pri: (Z1 čl.1251)",
+        "image": null,
+        "choices": [
+            {
+                "text": "odstránení nepredpokladaných prekážok",
+                "correct": true
+            },
+            {
+                "text": "obsluhe vlečky na šírej trati",
+                "correct": false
+            },
+            {
+                "text": "skúšobných jazdách HKV",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Ako sa žiada zo šírej trate o pomocný vlak?",
+        "image": null,
+        "choices": [
+            {
+                "text": "telefonicky, rádiovým zariadením, písomne prostredníctvom posla, ústne",
+                "correct": true
+            },
+            {
+                "text": "faxom, e-mailom",
+                "correct": false
+            },
+            {
+                "text": "internetom",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*O doprave vykoľajených vozidiel zo šírej trate do najbližšej stanice rozhodne: (Z1 čl.1257)",
+        "image": null,
+        "choices": [
+            {
+                "text": "vedúci odpratávacích prác",
+                "correct": true
+            },
+            {
+                "text": "vozmajster",
+                "correct": false
+            },
+            {
+                "text": "vozňový zámočník",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Jazda pomocného HKV s uviaznutým vlakom alebo časťou roztrhnutého vlaku sa uskutočňuje podľa zásad platných pre jazdu: (Z1 čl.1259)",
+        "image": null,
+        "choices": [
+            {
+                "text": "vlakov na nevylúčenej koľaji",
+                "correct": true
+            },
+            {
+                "text": "PMD na vylúčenej koľaji",
+                "correct": false
+            },
+            {
+                "text": "PMD na nevylúčenej koľaji",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Musí byť vyrozumený rušňovodič pomocného prostriedku (HKV) idúci po prevádzkovanej koľaji o kilometrickej polohe, kde stojí prvé vozidlo, prípadne posledné vozidlo uviaznutého vlaku? (Z1 čl.1262)",
+        "image": null,
+        "choices": [
+            {
+                "text": "áno, písomným rozkazom",
+                "correct": true
+            },
+            {
+                "text": "áno, ústne",
+                "correct": false
+            },
+            {
+                "text": "nie",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Môže sa vypraviť na traťovú koľaj vlak, ak po susednej koľaji sa samovoľne pohybujú vozidlá? (Z1 čl.1266)",
+        "image": null,
+        "choices": [
+            {
+                "text": "nie",
+                "correct": true
+            },
+            {
+                "text": "áno, ak sa mu nariadi jazda podľa rozhľadu",
+                "correct": false
+            },
+            {
+                "text": "áno, ak dá na to súhlas prevádzkový dispečer",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Čo urobí zamestnanec, ktorý zastaví samovoľne pohybujúce sa vozidlá? (Z1 čl.1268)",
+        "image": null,
+        "choices": [
+            {
+                "text": "zabezpečí ich proti samovoľnému pohybu, ohlási to susedným staniciam a vozidlá stráži do príchodu pomocného HKV",
+                "correct": true
+            },
+            {
+                "text": "oznámi to polícii a ohlási susedným staniciam, vozidlá stráži do príchodu pomocného HKV",
+                "correct": false
+            },
+            {
+                "text": "oznámi to regionálnemu dispečerovi",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Vlak cúva do zadnej stanice pred samovoľne pohybujúcimi sa vozidlami. Ako sa dovolí cúvajúcemu vlaku vchod do stanice",
+        "image": null,
+        "choices": [
+            {
+                "text": "návesťou vchodového návestidla, ručnou privolávacou návesťou, alebo písomným rozkazom",
+                "correct": true
+            },
+            {
+                "text": "rozkazom Op",
+                "correct": false
+            },
+            {
+                "text": "návesťou 72, Priblížiť",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Zaviesť vlak s lomenou trasou (t.j. prípad kedy číslo končiaceho vlaku prechádza na číslo predchádzajúceho vlaku) je:",
+        "image": null,
+        "choices": [
+            {
+                "text": "zakázané",
+                "correct": true
+            },
+            {
+                "text": "dovolené len na trati so zjednodušeným riadením dopravy",
+                "correct": false
+            },
+            {
+                "text": "dovolené len na trati s diaľkovo ovládaným zabezpečovacím zariadením",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Pri spájaní koľajových vozidiel sa za mierne stlačenie nárazníkov považuje to, že po ich dotyku mierne stlačenie dosiahneme otočením skrutkovky o:",
+        "image": null,
+        "choices": [
+            {
+                "text": "jeden závit",
+                "correct": true
+            },
+            {
+                "text": "dva závity",
+                "correct": false
+            },
+            {
+                "text": "päť závitov",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*HKV medzi sebou a so susedným vozňom sa spájajú tak: (Z1 čl.1311)",
+        "image": null,
+        "choices": [
+            {
+                "text": "aby sa na priamej koľaji nárazníky vozidiel dotýkali",
+                "correct": true
+            },
+            {
+                "text": "tesne, aby pružiny nárazníkov boli mierne stlačené",
+                "correct": false
+            },
+            {
+                "text": "aby sa spriahadlo utiahlo o dva závity",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Vozidlá vo vlaku sa spájajú tak, aby: (Z1 čl.1311)",
+        "image": null,
+        "choices": [
+            {
+                "text": "vypružovacie prvky nárazníkov boli mierne stlačené",
+                "correct": true
+            },
+            {
+                "text": "sa nárazníky dotýkali",
+                "correct": false
+            },
+            {
+                "text": "sa nárazníky v prednej polovici dotýkali a v zadnej polovici vlaku aby boli pružiny nárazníkov mierne stlačené",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Voľné spojovanie vozidiel vo vlakoch, pri ktorom vznikne medzera medzi nárazníkmi:",
+        "image": null,
+        "choices": [
+            {
+                "text": "nie je dovolené",
+                "correct": true
+            },
+            {
+                "text": "je povolené u manipulačných a služobných vlakoch",
+                "correct": false
+            },
+            {
+                "text": "je dovolené iba u  vlečkových vlakov",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Ako prvé pri spájaní vozidiel sa spojí:",
+        "image": null,
+        "choices": [
+            {
+                "text": "spriahadlo",
+                "correct": true
+            },
+            {
+                "text": "vykurovacie spojky",
+                "correct": false
+            },
+            {
+                "text": "káble pre napájanie a diaľkové ovládanie",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Ak z technických príčin nie je možné nepoužité spriahadlo zavesiť na háčik čelníka alebo na hák vlastného spriahadla vozňa postupuje sa nasledovne: (Z1 čl.1313)",
+        "image": null,
+        "choices": [
+            {
+                "text": "spriahadlo sa musí skrátiť a nechať voľne visieť najmenej 15 cm nad hlavou koľajnice",
+                "correct": true
+            },
+            {
+                "text": "zamestnanec spájajúci vozne spriahadlo skráti podľa vlastného uváženia",
+                "correct": false
+            },
+            {
+                "text": "zamestnanec spájajúci vozne skráti spriahadlo o dva závity",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Odpojené vykurovacie a brzdové (tlakové) spojky sa: (Z1 čl.1314)",
+        "image": null,
+        "choices": [
+            {
+                "text": "ihneď po rozpojení musia zavesiť na držadlo",
+                "correct": true
+            },
+            {
+                "text": "nemusia zavesiť na držadlo",
+                "correct": false
+            },
+            {
+                "text": "zavesia na držadlo v závislosti od poveternostných podmienok pri teplote min. -5°C",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Kto rozpája a spája hnacie vozidlá medzi sebou ako aj s prvým vozňom? (Z1 čl.1315)",
+        "image": null,
+        "choices": [
+            {
+                "text": "rušňovodič (pokiaľ nie je nato určený iný zamestnanec)",
+                "correct": true
+            },
+            {
+                "text": "zamestnanec stanice vyhotovujúci vlakovú dokumentáciu",
+                "correct": false
+            },
+            {
+                "text": "vozmajster pred vykonaním skúšky priebežnej brzdy",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Kto zodpovedá za správne spojenie vozidiel a spojenie HKV so susedným koľajovým vozidlom? (Z1 čl.1317)",
+        "image": null,
+        "choices": [
+            {
+                "text": "zamestnanec, ktorý ich spojil",
+                "correct": true
+            },
+            {
+                "text": "rušňovodič vedúceho HKV",
+                "correct": false
+            },
+            {
+                "text": "zamestnanec, ktorý vykonáva technickú prehliadku vlaku",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Za správne spojenie koľajových vozidiel zodpovedá: (Z1 čl.1317)",
+        "image": null,
+        "choices": [
+            {
+                "text": "zamestnanec, ktorý ich spojil",
+                "correct": true
+            },
+            {
+                "text": "výpravca",
+                "correct": false
+            },
+            {
+                "text": "zamestnanenc, ktorý riadil zostavu vlaku",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Za technický stav narážacieho a ťahadlového mechanizmu pri technickej prehliadke vozňov zodpovedá zamestnanec: (Z1 čl.1318)",
+        "image": null,
+        "choices": [
+            {
+                "text": "zodpovedný za technický stav vozňov",
+                "correct": true
+            },
+            {
+                "text": "určený Prevádzkovým poriadkom",
+                "correct": false
+            },
+            {
+                "text": "ktorý vykonáva súpis vlaku",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Pri preprave mimoriadnej zásielky je rušňovodič o obmedzení rýchlosti vyrozumený rozkazom \"V\" takto: Rýchlosť 50/20. Čo znamená číslo \"50\" v čitateli zlomku? (Z1 čl.1335)",
+        "image": null,
+        "choices": [
+            {
+                "text": "rýchlosť 50 km/h, ktorá nesmie byť počas prepravy prekročená",
+                "correct": true
+            },
+            {
+                "text": "rýchlosť podľa rozhľadu",
+                "correct": false
+            },
+            {
+                "text": "50 metrov pred krajnou vchodovou výhybkou rýchlosť 20 km/h pri jazde priamym smerom nesmie byť prekročená",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Stanice, v ktorých je vchod vlaku vezúci zásielku koľajníc dlhých 50 m a viac, návestený priamym aj vedľajším smerom len návesťou 3, Voľno vchodového návestidla sa uvedú v:",
+        "image": null,
+        "choices": [
+            {
+                "text": "smerovacej (instradačnej) správe a rušňovodičovi sa nariadi v týchto staniciach vždy vchodová a odchodová rýchlosť najviac 30 km/h",
+                "correct": true
+            },
+            {
+                "text": "Tabuľkách traťových pomerov",
+                "correct": false
+            },
+            {
+                "text": "Zošitovom cestovnom poriadku",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Najväčšia dovolená dĺžka vlaku na jednotlivých traťových úsekoch je uvedená v: (Z1 čl.1358)",
+        "image": null,
+        "choices": [
+            {
+                "text": "Tabuľkách traťových pomerov",
+                "correct": true
+            },
+            {
+                "text": "Prevádzkovom poriadku",
+                "correct": false
+            },
+            {
+                "text": "Zošitovom cestovnom poriadku",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Dopravná hmotnosť vlaku je súčet: (Z1 čl.1360)",
+        "image": null,
+        "choices": [
+            {
+                "text": "vlastnej hmotnosti všetkých vozidiel nevyvíjajúcich ťažnú silu a hmotnosti nákladu",
+                "correct": true
+            },
+            {
+                "text": "hmotnosti dráhových vozidiel a hmotnosti HKV",
+                "correct": false
+            },
+            {
+                "text": "vlastnej hmotnosti všetkých vozidiel nevyvíjajúcich ťažnú silu",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Pravidelná hmotnosť slúži na:",
+        "image": null,
+        "choices": [
+            {
+                "text": "určenie potrebného počtu hnacích vozidiel na príslušných traťových úsekoch",
+                "correct": true
+            },
+            {
+                "text": "výpočet brzdiacich percent vlaku",
+                "correct": false
+            },
+            {
+                "text": "stanovenie rýchlosti vlaku na príslušnom traťovom úseku",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Normatív hmotnosti je: (Z1 čl.1364)",
+        "image": null,
+        "choices": [
+            {
+                "text": "hmotnosť ťahaných vozidiel určitého typu jazdného odporu, určená pre daný typ HKV a traťový úsek",
+                "correct": true
+            },
+            {
+                "text": "súčet dopravnej hmotnosti a činných hnacích vozidiel",
+                "correct": false
+            },
+            {
+                "text": "plánovaná dopravná hmotnosť vlaku",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Normatív hmotnosti je uvedený v:",
+        "image": null,
+        "choices": [
+            {
+                "text": "záhlaví tabelárneho cestovného poriadku vlaku",
+                "correct": true
+            },
+            {
+                "text": "Tabuľkách traťových pomerov",
+                "correct": false
+            },
+            {
+                "text": "zozname vlakov pre staničných zamestnancov",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Novú rýchlosť vlaku, ak sa výnimočne použije HKV s nižšou konštrukčnou rýchlosťou ako je stanovená určí:",
+        "image": null,
+        "choices": [
+            {
+                "text": "dopravca",
+                "correct": true
+            },
+            {
+                "text": "vlakový dispečer",
+                "correct": false
+            },
+            {
+                "text": "výpravca",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Normatív hmotnosti sa nepovažuje za prekročený pokiaľ dopravná hmotnosť pripadajúca na príslušné HDV neprekročí tento normatív o viac ako: (Z1 čl.1366)",
+        "image": null,
+        "choices": [
+            {
+                "text": "2 %, najviac však o 25 ton",
+                "correct": true
+            },
+            {
+                "text": "3 %, najviac však o 25 ton",
+                "correct": false
+            },
+            {
+                "text": "4 %, najviac však o 50 ton",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Kde je uvedená priechodnosť HKV na danej trati podľa priečnych a zvislých účinkov na trať? (Z1 čl.1372)",
+        "image": null,
+        "choices": [
+            {
+                "text": "v Tabuľkách traťových pomerov",
+                "correct": true
+            },
+            {
+                "text": "v Zošitovom cestovnom poriadku",
+                "correct": false
+            },
+            {
+                "text": "na tabuľke upevnenej na boku HKV",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Medzi činné hnacie koľajové vozidlá patrí: (Z1 čl.1375)",
+        "image": null,
+        "choices": [
+            {
+                "text": "HKV vložené",
+                "correct": true
+            },
+            {
+                "text": "HKV v závese",
+                "correct": false
+            },
+            {
+                "text": "HKV neobsadené",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Môžu byť vo vlaku činné HKV radené vo dvojiciach? (Z1 čl.1376)",
+        "image": null,
+        "choices": [
+            {
+                "text": "áno",
+                "correct": true
+            },
+            {
+                "text": "áno, iba ak je to uvedené v Zošitovom cestovnom poriadku",
+                "correct": false
+            },
+            {
+                "text": "áno, iba ak je to uvedené v Tabuľkách traťových pomerov",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Kde je uvedený dovolený počet HKV na dopravu vlakov na tratiach širokého rozchodu?",
+        "image": null,
+        "choices": [
+            {
+                "text": "v Tabuľkách traťových pomerov",
+                "correct": true
+            },
+            {
+                "text": "v Zošitovom cetovnom poriadku",
+                "correct": false
+            },
+            {
+                "text": "na tabuľke upevnenej na boku HKV",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Vlak je ťahaný dvoma činnými HKV. Ktoré z nich je vedúce HKV? (Z1 čl.1379)",
+        "image": null,
+        "choices": [
+            {
+                "text": "príprahové HKV",
+                "correct": true
+            },
+            {
+                "text": "vlakové HKV",
+                "correct": false
+            },
+            {
+                "text": "rušňovodiči HKV sa dohodnú",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Za vložené HKV považujeme:",
+        "image": null,
+        "choices": [
+            {
+                "text": "HKV zaradené vo vnútri vlaku, s činným HKV v čele vlaku",
+                "correct": true
+            },
+            {
+                "text": "HKV zaradené vo vnútri vlaku, ak vo vlaku nie sú zaradené iné HKV",
+                "correct": false
+            },
+            {
+                "text": "pri tlačenom vlaku HKV zaradené na konci vlaku",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Nečinné HKV nevyvíja žiadnu ťažnú silu. Elektrické HKV musí mať počas jazdy zberače: (Z1 čl.1384)",
+        "image": null,
+        "choices": [
+            {
+                "text": "stiahnuté",
+                "correct": true
+            },
+            {
+                "text": "zdvihnuté",
+                "correct": false
+            },
+            {
+                "text": "zdvihnuté len pri rozjazde vlaku",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Kedy možno použiť ďalšie HKV ako postrkové, ak je na dopravu vlaku potrebné viac než jedno HKV? (Z1 čl.1387)",
+        "image": null,
+        "choices": [
+            {
+                "text": "ak nemožno zaradiť do čela vlaku ďalšie HKV, radenie vlaku tomu zodpovedá a na danej trati je povolené postrkové HKV",
+                "correct": true
+            },
+            {
+                "text": "ak je na danej trati povolené postrkové HKV bez ohľadu na radenie vlaku",
+                "correct": false
+            },
+            {
+                "text": "kedykoľvek",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Ako vyrozumie výpravca rušňovodičov vedúceho aj postrkového HKV o použití postrkového HKV v obvode stanice? (Z1 čl.1390)",
+        "image": null,
+        "choices": [
+            {
+                "text": "ústne",
+                "correct": true
+            },
+            {
+                "text": "písomným rozkazom",
+                "correct": false
+            },
+            {
+                "text": "návesťou 118, Posun za námedzník",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Neprivesené postrkové HKV elektrickej trakcie musí ukončiť svoju činnosť pred: (Z1 čl.1391)",
+        "image": null,
+        "choices": [
+            {
+                "text": "návesťou 136b, \"Vypnite prúd\" alebo pred návesťou 140, \"Stiahnite zberač\"",
+                "correct": true
+            },
+            {
+                "text": "návesťou 54, \"Hranica izolovaného úseku\"",
+                "correct": false
+            },
+            {
+                "text": "návesťou 139, \"Pripravte sa na stiahnute zberačov\"",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Traťové úseky, na ktorých je dovolená jazda s nepriveseným postrkovým HKV sa uvádzajú v:",
+        "image": null,
+        "choices": [
+            {
+                "text": "Tabuľkách traťových pomerov",
+                "correct": true
+            },
+            {
+                "text": "Zošitovom cestovnom poriadku",
+                "correct": false
+            },
+            {
+                "text": "Prevádzkovom poriadku",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Aký je postup rušňovodiča, keď sa neprivesené postrkové HKV oddelí od vlaku?  (Z1 čl.1393)",
+        "image": null,
+        "choices": [
+            {
+                "text": "musí čo najskôr zastaviť a dávať návesť na zastavenie vlaku, návesť 50, \"Stoj, zastavte všetkými prostriedkami\"",
+                "correct": true
+            },
+            {
+                "text": "návesť 131, \"Zvolávanie všetkých zamestnancov\"",
+                "correct": false
+            },
+            {
+                "text": "návesť 104, \"Pozor\"",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Vlak môže byť obsadený len rušňovodičom za podmienok, že vedúce HKV je vybavené: (Z1 čl.1406)",
+        "image": null,
+        "choices": [
+            {
+                "text": "správne účinkujúcim zariadením pre kontrolu bdelosti rušňovodiča zabezpečujúcim samočinné zastavenie vlaku",
+                "correct": true
+            },
+            {
+                "text": "správne účinkujúcou ručnou brzdou",
+                "correct": false
+            },
+            {
+                "text": "vlakovým zabezpečovačom",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Vlak smie byť obsadený na tratiach so zjednodušeným riadením dopravy len rušňovodičom ak: (Z1 čl.1407)",
+        "image": null,
+        "choices": [
+            {
+                "text": "je zabezpečená príprava vlakovej cesty určeným zamestnancom",
+                "correct": true
+            },
+            {
+                "text": "to určí výpravca",
+                "correct": false
+            },
+            {
+                "text": "to určí vlakový dispečer",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Dopravca obsadenie vlakov oznamuje:",
+        "image": null,
+        "choices": [
+            {
+                "text": "Rozkazom o sprevádzaní vlakov, ktorý vydá k zmene GVD",
+                "correct": true
+            },
+            {
+                "text": "ohlásením prevádzkovému dispečerovi",
+                "correct": false
+            },
+            {
+                "text": "ohlásením do smenového plánu",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*V kabíne rušňovodiča, z ktorej je HKV riadené sa môžu zdržiavať: (Z1 čl.1409)",
+        "image": null,
+        "choices": [
+            {
+                "text": "osoby, ktoré sa preukážu osobitným povolením dopravcu",
+                "correct": true
+            },
+            {
+                "text": "operátori doručujúci písomný rozkaz",
+                "correct": false
+            },
+            {
+                "text": "zamestnanci stanice zúčastnení pna príprave vlakovej cesty",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Posunujúci diel obsadený cestujúcimi musí byť brzdený: (Z1 čl.1414)",
+        "image": null,
+        "choices": [
+            {
+                "text": "priebežnou brzdou",
+                "correct": true
+            },
+            {
+                "text": "prídavnou brzdou",
+                "correct": false
+            },
+            {
+                "text": "ručnou brzdou",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Každé vozidlo vo vlaku musí mať funkčné hlavné brzdové potrubie. V prípade poruchy alebo nepoužiteľnosti hlavného potrubia musí byť vozidlo: (Z1 čl.1415)",
+        "image": null,
+        "choices": [
+            {
+                "text": "vybavené prenosným brzdovým potrubím",
+                "correct": true
+            },
+            {
+                "text": "zaradené hneď za vlakové HKV",
+                "correct": false
+            },
+            {
+                "text": "zaradené ako posledné vo vlaku",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Ak je potrebné dopraviť skupinu vozidiel nezapojených do priebežnej brzdy potom sa musí táto skupina dopraviť tak, že sa do tejto skupiny: (Z1 čl.1416)",
+        "image": null,
+        "choices": [
+            {
+                "text": "na začiatok a koniec zaradí obsadené HKV a podľa potreby ďalšie vozidlá zapojené do samočinnej priebežnej tlakovej brzdy",
+                "correct": true
+            },
+            {
+                "text": "zaradí činné HKV na koniec vlaku a takáto skupina sa dopravuje tlačením",
+                "correct": false
+            },
+            {
+                "text": "za prvý vozeň zaradí vložené HKV vybavené dostatočným počtom zarážok",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Skúšku zaisťovacej brzdy je potrebné vykonať pred: (Z1 čl.1417)",
+        "image": null,
+        "choices": [
+            {
+                "text": "jej použitím na zaistenie vozidiel",
+                "correct": true
+            },
+            {
+                "text": "vykonaním úplnej skúšky brzdy",
+                "correct": false
+            },
+            {
+                "text": "vykonaním jednoduchej skúšky brzdy",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Na vozňoch, ktoré sú potrebné na zaistenie stojaceho vlaku na šírej trati v prípade poruchy priebežnej brzdy sa musí vykonať skúška zaisťovacej brzdy v stanici: (Z1 čl.1417)",
+        "image": null,
+        "choices": [
+            {
+                "text": "východiskovej",
+                "correct": true
+            },
+            {
+                "text": "nácestnej",
+                "correct": false
+            },
+            {
+                "text": "cieľovej",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Medzi zadným čelom posledného vozňa a vozňom s funkčnou zaisťovacou brzdou nesmie byť bez funkčnej zaisťovacej brzdy viac ako: (Z1 čl.1421)",
+        "image": null,
+        "choices": [
+            {
+                "text": "8 náprav",
+                "correct": true
+            },
+            {
+                "text": "16 náprav",
+                "correct": false
+            },
+            {
+                "text": "20 náprav",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Medzi vlakovým HKV a prvým vozňom s funkčnou zaisťovacou brzdou nesmie byť bez funkčnej zaisťovacej brzdy viac ako:",
+        "image": null,
+        "choices": [
+            {
+                "text": "8 náprav",
+                "correct": true
+            },
+            {
+                "text": "16 náprav",
+                "correct": false
+            },
+            {
+                "text": "20 náprav",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Pri použití zarážok na zaistenie stojacich vozidiel sa za brzdiacu hmotnosť považuje: (Z1 čl.1421)",
+        "image": null,
+        "choices": [
+            {
+                "text": "podiel dopravnej hmotnosti vozňa pripadajúci na podloženú nápravu, maximálne 25 ton na jeden vozeň",
+                "correct": true
+            },
+            {
+                "text": "podiel vlastnej hmotnosti vozidla pripadajúci na podloženú nápravu, maximálne 5 ton na jednu nápravu",
+                "correct": false
+            },
+            {
+                "text": "podiel celkovej hmotnosti skupiny odstavených vozidiel pripadajúci na podloženú nápravu, maximálne 25 ton na jednu nápravu",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Predpísaný režim brzdenia vlaku je uvedený v: (Z1 čl.1426)",
+        "image": null,
+        "choices": [
+            {
+                "text": "Zošitovom cestovnom poriadku",
+                "correct": true
+            },
+            {
+                "text": "Rozkaze o zavedení GVD",
+                "correct": false
+            },
+            {
+                "text": "Tabuľkách traťových pomerov",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Režim brzdenia vlakov a HKV, dĺžku vlaku v metroch (nápravách) vzhľadom na brzdenie a maximálnu hmotnosť vlaku určí:",
+        "image": null,
+        "choices": [
+            {
+                "text": "dopravca",
+                "correct": true
+            },
+            {
+                "text": "výpravca",
+                "correct": false
+            },
+            {
+                "text": "prevádzkový dispečer",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Úplnou skúškou brzdy sa overuje brzdový účinok: (Z1 čl.1444)",
+        "image": null,
+        "choices": [
+            {
+                "text": "samočinných bŕzd všetkých vozidiel zapojených do priebežnej brzdy",
+                "correct": true
+            },
+            {
+                "text": "zaisťovacích bŕzd",
+                "correct": false
+            },
+            {
+                "text": "prídavnej brzdy",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Vlak pred začatím vykonávania skúšky priebežnej brzdy musí byť zaistený zabrzdením: (Z1 čl.1445)",
+        "image": null,
+        "choices": [
+            {
+                "text": "prídavnej brzdy HKV",
+                "correct": true
+            },
+            {
+                "text": "zaisťovacej brzdy na prvom a poslednom vozni",
+                "correct": false
+            },
+            {
+                "text": "priebežnej brzdy",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Jednoduchou skúškou brzdy sa zisťuje priechodnosť: (Z1 čl.1456)",
+        "image": null,
+        "choices": [
+            {
+                "text": "hlavného potrubia",
+                "correct": true
+            },
+            {
+                "text": "napájacieho potrubia",
+                "correct": false
+            },
+            {
+                "text": "kontrolného potrubia",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Účinok brzdenia pri vykonávaní jednoduchej skúšky brzdy sa overuje: (Z1 čl.1456)",
+        "image": null,
+        "choices": [
+            {
+                "text": "na hociktorom brzdenom vozidle za miestom rozpojenia alebo spojenia hlavného potrubia",
+                "correct": true
+            },
+            {
+                "text": "vždy na poslednom priebežne brzdenom vozidle",
+                "correct": false
+            },
+            {
+                "text": "vždy na prvom priebežne brzdenom vozidle",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Ak je posunujúci diel priebežne brzdený, musí sa pred začiatkom posunu overiť účinok brzdenia na všetkých priebežne brzdených vozidlách?",
+        "image": null,
+        "choices": [
+            {
+                "text": "áno",
+                "correct": true
+            },
+            {
+                "text": "nie",
+                "correct": false
+            },
+            {
+                "text": "áno, ak to nariadi výpravca",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Za vykonanie skúšky brzdy posunujúceho dielu zodpovedá:",
+        "image": null,
+        "choices": [
+            {
+                "text": "zamestnanec, ktorý riadi posun",
+                "correct": true
+            },
+            {
+                "text": "rušňovodič",
+                "correct": false
+            },
+            {
+                "text": "vozmajster",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Po príchode vlaku do ŽST sa posunuje so súpravou vlaku alebo jeho prednou časťou s HKV, z ktorého bola ovládaná priebežná brzda vlaku. Je potrebné v tomto prípade vykonať skúšku brzdy posunujúceho dielu? (Z1 čl.1461)",
+        "image": null,
+        "choices": [
+            {
+                "text": "nie",
+                "correct": true
+            },
+            {
+                "text": "áno",
+                "correct": false
+            },
+            {
+                "text": "áno, pokiaľ čas od zastavenia vlaku po prvý pohyb posunujúceho dielu nebude väčší ako 50 minút.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Musí byť o vykonanej skúške brzdy vyhotovený záznam?",
+        "image": null,
+        "choices": [
+            {
+                "text": "áno",
+                "correct": true
+            },
+            {
+                "text": "nie",
+                "correct": false
+            },
+            {
+                "text": "nie, pokiaľ je to uvedené v technologických postupoch",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*V Správe o brzdení musí byť uvedený záznam: (Z1 čl.1466)",
+        "image": null,
+        "choices": [
+            {
+                "text": "počet a druh bŕzd zapojených vo vlaku",
+                "correct": true
+            },
+            {
+                "text": "súpis všetkých vozňov zaradených vo vlaku",
+                "correct": false
+            },
+            {
+                "text": "polohy prestavovačov na vozňoch",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Zápis o skúške brzdy sa nevykonáva:",
+        "image": null,
+        "choices": [
+            {
+                "text": "pri ucelených jendotkách a hnacích vozidlách, ktoré majú v činnosti zariadenie pre automatizované vykonanie skúušky brzdy vlaku (jendotky) so záznamovým zariadením",
+                "correct": true
+            },
+            {
+                "text": "pri ucelených v lakoch zostavených z podvozkových vozňov",
+                "correct": false
+            },
+            {
+                "text": "pri vlakoch osobnej dopravy jazdiacich v taktoch",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Ako sa majú utiahnuť ručné brzdy za jazdy vlaku (pri poruche priebežnej brzdy) alebo pri posune? (Z1 čl.1479)",
+        "image": null,
+        "choices": [
+            {
+                "text": "tak aby kolesá nedostali šmyk",
+                "correct": true
+            },
+            {
+                "text": "tak aby dosiahol čo najväčší bŕzdny účinok bez ohľadu na to, že kolesá dostanú šmyk",
+                "correct": false
+            },
+            {
+                "text": "len mierne tak, aby nedochádzalo k iskreniu a nevznikol požiar",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Ak vzniknú na kolesách vozňa ploché miesta, o jeho prípadnom vyradení z vlaku rozhodne: (Z1 čl.1479)",
+        "image": null,
+        "choices": [
+            {
+                "text": "rušňovodič",
+                "correct": true
+            },
+            {
+                "text": "zamestnanec, ktorý takýto stav zistil",
+                "correct": false
+            },
+            {
+                "text": "vozmajster v cieľovej stanici",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Pri odstavení HKV rušňovodič zabezpečí HKV proti samovoľnému pohybu:",
+        "image": null,
+        "choices": [
+            {
+                "text": "zabrzdením všetkých zaisťovacích bŕzd",
+                "correct": true
+            },
+            {
+                "text": "použitím drevených klínov",
+                "correct": false
+            },
+            {
+                "text": "zaistením jednou dvojprírubovou zarážkou",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Pri stanovení potrebných brzdiacich percent sa do dĺžky vlaku, vyjadrenej v metroch alebo v počte náprav nezapočítavajú: (Z1 čl.1484)",
+        "image": null,
+        "choices": [
+            {
+                "text": "činné HKV okrem motorových a elektrických vozňov a jednotiek",
+                "correct": true
+            },
+            {
+                "text": "koncovo naložené vozidlá",
+                "correct": false
+            },
+            {
+                "text": "desať a šesťnásťosové hlbinné vozne",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Potrebné brzdiace percentá sa pre každý vlak musia uviesť v: (Z1 čl.1486)",
+        "image": null,
+        "choices": [
+            {
+                "text": "Zošitovom cestovnom poriadku",
+                "correct": true
+            },
+            {
+                "text": "Prevádzkovom poriadku stanice",
+                "correct": false
+            },
+            {
+                "text": "Správe o zostave vlaku",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Pri všetkých vlakoch sa potrebné brzdiace percentá stanovujú pre: (Z1 čl.1486)",
+        "image": null,
+        "choices": [
+            {
+                "text": "príslušný režim brzdenia",
+                "correct": true
+            },
+            {
+                "text": "traťovú rýchlosť",
+                "correct": false
+            },
+            {
+                "text": "konštrukčnú rýchlosť HKV",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Ak sa výnimočne zostaví vlak dlhší ako je uvedené v jeho zošitovom cestovnom poriadku, dopravca určí režim brzdenia a potrebné brzdiace percentá: (Z1 čl.1487)",
+        "image": null,
+        "choices": [
+            {
+                "text": "podľa iného vhodného vlaku alebo tabuliek brzdiacich percent",
+                "correct": true
+            },
+            {
+                "text": "úmerne k počtu pridaných vozidiel",
+                "correct": false
+            },
+            {
+                "text": "ponechá podľa výmery určenej pre pôvodný vlak",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Vlak je dostatočne brzdený, ak jeho skutočné brzdiace percento: (Z1 čl.1488) ",
+        "image": null,
+        "choices": [
+            {
+                "text": "kryje predpísanú výmeru brzdiacich percent pre príslušný úsek",
+                "correct": true
+            },
+            {
+                "text": "kryje výmeru predpísaných brzdiacich percent pre stúpanie na prúslušnom úseku",
+                "correct": false
+            },
+            {
+                "text": "je nižšie ako je predpísaná výmera brzdiacich percent pre príslušný úsek",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Ak zlyhá na trati priebežná brzda úplne alebo len pri niektorých vozňoch, rušňovodič je povinný: (Z1 čl.1496)",
+        "image": null,
+        "choices": [
+            {
+                "text": "urobiť všetky dostupné opatrenia na zastavenie vlaku a po zastavení utiahnuť zaisťovacie brzdy, ktoré sú potrebné na zaistenie stojaceho vlaku na trati",
+                "correct": true
+            },
+            {
+                "text": "HKV označiť návesťou 49, Stoj, protiidúcim dráhovým vozidlám a opakovane dávať návesť 104, Pozor",
+                "correct": false
+            },
+            {
+                "text": "udržiavať stanovenú rýchlosť vlaku a dávať návesť 106, Zabrzdite úplne",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "*Pri zlyhaní priebežnej brzdy, ak rušňovodič zistí, že je dostatočne brzdený pre rýchlosť 15 km/h: (Z1 čl.1497)",
+        "image": null,
+        "choices": [
+            {
+                "text": "môže ísť ďalej touto rýchlosťou až do najbližšej stanice",
+                "correct": true
+            },
+            {
+                "text": "vyžiada si od výpravcov susedných staníc pomocné HKV s dostatočným počtom priebežne brzdených vozidiel",
+                "correct": false
+            },
+            {
+                "text": "oznámi regionálnemu dispečerovi schopnosť vlaku na ďalšiu jazdu",
                 "correct": false
             }
         ]
