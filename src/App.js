@@ -26,10 +26,11 @@ function App() {
   }
 
   const doStartGame = (path, maxQuestions=40) => {
+    const genrand = require('random-seed').create(new Date())
     setScore(0)
     setShowAnswer(false)
     setErrorMessage('')
-    setQuestions((require(`./${path}`)).sort(() => 0.5 - Math.random()).slice(0, maxQuestions))
+    setQuestions((require(`./${path}`)).sort(() => 0.5 - genrand.floatBetween(0.0,1.0)).slice(0, maxQuestions))
     setStartGame(true)
     setUpQuestion(0)
   }
