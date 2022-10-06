@@ -90,13 +90,13 @@ function App() {
             </div>
           </>
           ) : (<>
-            <div class="flex md:w-1/3 mb-6 md:mb-0 items-center justify-center">
-              <label class="uppercase tracking-wide text-white-700 text-xs font-bold mb-2" for="pocet-otazok">
-                Počet otázok
-              </label>
-              <input class="appearance-none w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="pocet-otazok" type="text" placeholder="40" onChange={e => setQuestionCount(e.target.value)}/>
-            </div>
             <div class="flex justify-center">
+              <div class="flex md:w-1/3 mb-6 md:mb-0 items-center justify-center">
+                <label class="uppercase tracking-wide text-white-700 text-xs font-bold mb-2" for="pocet-otazok">
+                  Počet otázok
+                </label>
+                <input class="appearance-none w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="pocet-otazok" type="text" placeholder="40" onChange={e => setQuestionCount(e.target.value)}/>
+              </div>
               <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('zsr.js')}>Začni ŽSR!</button>
               <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('ze.js')}>Začni ZE!</button>
             </div>
