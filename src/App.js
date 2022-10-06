@@ -9,6 +9,7 @@ function App() {
   const [score, setScore] = useState(0)
   const [errorMessage, setErrorMessage] = useState('')
   const [showAnswer, setShowAnswer] = useState(false)
+  const [questionCount, setQuestionCount] = useState(40)
 
   const answerQuestion = answer => {
     if (showAnswer) return
@@ -25,12 +26,12 @@ function App() {
     questions[q].choices.sort(() => 0.5 - Math.random())
   }
 
-  const doStartGame = (path, maxQuestions=40) => {
+  const doStartGame = (path) => {
     const genrand = require('random-seed').create(new Date())
     setScore(0)
     setShowAnswer(false)
     setErrorMessage('')
-    setQuestions((require(`./${path}`)).sort(() => 0.5 - genrand.floatBetween(0.0,1.0)).slice(0, maxQuestions))
+    setQuestions((require(`./${path}`)).sort(() => 0.5 - genrand.floatBetween(0.0,1.0)).slice(0, questionCount))
     setStartGame(true)
     setUpQuestion(0)
   }
@@ -88,13 +89,18 @@ function App() {
             { showAnswer ? (<button class="bg-green-700 hover:brightness-110 px-5 my-8 py-5 text-white rounded-lg" onClick={() => doNextQuestion()}>Pokračuj!</button>) : null }
             </div>
           </>
-          ) : (
+          ) : (<>
+            <div class="flex md:w-1/3 mb-6 md:mb-0 items-center justify-center">
+              <label class="uppercase tracking-wide text-white-700 text-xs font-bold mb-2" for="pocet-otazok">
+                Počet otázok
+              </label>
+              <input class="appearance-none w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="pocet-otazok" type="text" placeholder="40" onChange={e => setQuestionCount(e.target.value)}/>
+            </div>
             <div class="flex justify-center">
-              <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('zsr.js')}>Začni ŽSR! (40 otázok)</button>
-              <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('zsr.js', 9999)}>Začni ŽSR!</button>
+              <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('zsr.js')}>Začni ŽSR!</button>
               <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('ze.js')}>Začni ZE!</button>
             </div>
-          )}
+          </>)}
       </main>
     </div>
   );
