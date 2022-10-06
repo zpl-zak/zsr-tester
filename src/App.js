@@ -90,7 +90,7 @@ function App() {
             </div>
           </>
           ) : (<>
-            <div class="flex justify-center">
+            <div class="flex flex-wrap justify-center">
               <div class="flex md:w-1/3 mb-6 md:mb-0 items-center justify-center">
                 <label class="uppercase tracking-wide text-white-700 text-xs font-bold mb-2" for="pocet-otazok">
                   Počet otázok
