@@ -1956,7 +1956,7 @@ module.exports = [
                 "correct": false
             },
             {
-                "text": "vzidalenosť 1000m",
+                "text": "vzidalenosť 1000 m",
                 "correct": false
             }
         ]
@@ -3180,7 +3180,7 @@ module.exports = [
                 "correct": false
             },
             {
-                "text": "žlté svetlo alebo obdlžníková doska žltej farby z materiálu odrážajúceho svetlo na zadnej strane posledného vozidla jednotlivých častí vpravo",
+                "text": "žltá zastávka alebo obdlžníková doska žltej farby z materiálu odrážajúceho svetlo na zadnej strane posledného vozidla jednotlivých častí vpravo",
                 "correct": false
             }
         ]
@@ -3816,7 +3816,7 @@ module.exports = [
         ]
     },
     {
-        "question": "Návesť 127, Zastavte prácu pluhu označuje začiaok úseku, v ktorom:",
+        "question": "Návesť 127, Zastavte prácu pluhu označuje začiatok úseku, v ktorom:",
         "image": null,
         "choices": [
             {

@@ -9,7 +9,7 @@ function App() {
   const [score, setScore] = useState(0)
   const [errorMessage, setErrorMessage] = useState('')
   const [showAnswer, setShowAnswer] = useState(false)
-  const [questionCount, setQuestionCount] = useState(40)
+  const [questionCount, setQuestionCount] = useState(60)
 
   const answerQuestion = answer => {
     if (showAnswer) return
@@ -97,7 +97,11 @@ function App() {
                 </label>
                 <input class="appearance-none w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="pocet-otazok" type="text" placeholder="40" onChange={e => setQuestionCount(e.target.value)}/>
               </div>
-              <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('zsr.js')}>Začni ŽSR!</button>
+              <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('zsr.js')}>Začni Z1!</button>
+              <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('sr15.js')}>Začni SR15!</button>
+              <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('z17_z18.js')}>Začni Z17 a Z8 (2018)!</button>
+              <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('vm1.js')}>Začni VM1!</button>
+              <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('v4.js')}>Začni V4!</button>
               <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('ze.js')}>Začni ZE!</button>
             </div>
           </>)}
