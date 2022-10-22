@@ -558,22 +558,7 @@ module.exports = [
         ]
     },
     {
-        "question": "Vo vlaku je zaradených viac obsadených hnacích vozidiel. Rušňovodič vedúceho hnacieho vozidla prekročí stanovenú rýchlosť vlaku. Rušňovodič iného HKV zaradeného vo vlaku musí ",
-        "image": null,
-        "choices": [
-            {
-                "correct": true
-            },
-            {
-                "correct": false
-            },
-            {
-                "correct": false
-            }
-        ]
-    },
-    {
-        "question": "vykonať opatrenia na zastavenie vlaku:",
+        "question": "Vo vlaku je zaradených viac obsadených hnacích vozidiel. Rušňovodič vedúceho hnacieho vozidla prekročí stanovenú rýchlosť vlaku. Rušňovodič iného HKV zaradeného vo vlaku musí vykonať opatrenia na zastavenie vlaku:",
         "image": null,
         "choices": [
             {
