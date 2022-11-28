@@ -780,12 +780,12 @@ module.exports = [
         "name": "Vložené návestidlo (Stožiare majú červené, modré a biele pásy rovnakej výšky, trpasličie vložené návestidlá majú na označovacom páse umiestnenom vedľa návestného štítu červené, modré a biele pásy rovnakej výšky.)"
     },
     {
-        "image": "https://user-images.githubusercontent.com/114129453/204111111-d3cfaae8-cb15-4397-8f49-6086645e05f0.png",
+        "image": "https://user-images.githubusercontent.com/114129453/204299923-59f214b8-84a6-43f2-a294-1ae686e0ac4c.png",
         "name": "Odchodové návestidlo dovoľuje jazdu (Prerušované biele svetlo)"
     },
     {
         "image": "https://user-images.githubusercontent.com/114129453/204111110-e89ebc4a-51cd-40c8-94da-82458d663efe.png",
-        "name": "Koľajisko s vloţeným návestidlom (Čierny výkričník na bielej tabuli čierno orámovanej)"
+        "name": "Koľajisko s vloženým návestidlom (Čierny výkričník na bielej tabuli čierno orámovanej)"
     },
     {
         "image": "https://user-images.githubusercontent.com/114129453/204111109-1e5f82b6-d920-4fd2-88fb-1ca5e8cd238b.png",
