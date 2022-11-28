@@ -7,15 +7,19 @@ const pickRandomMeme = () => {
 }
 
 function App() {
+
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [startGame, setStartGame] = useState(false)
-  const [questions, setQuestions] = useState([])
   const [score, setScore] = useState(0)
   const [errorMessage, setErrorMessage] = useState('')
   const [showAnswer, setShowAnswer] = useState(false)
   const [questionCount, setQuestionCount] = useState(60)
   const [gameMode, setGameMode] = useState('choices')
   const [imageRevealText, setImageRevealText] = useState('')
+  const [questions, setQuestions] = useState([])
+
+  let currGameMode = gameMode
+  let currQuestions = questions
 
   const answerQuestion = answer => {
     if (showAnswer) return
@@ -29,19 +33,22 @@ function App() {
 
   const setUpQuestion = q => {
     setCurrentQuestion(q)
-    setImageRevealText(questions[q].name)
 
-    if (gameMode === "choices")
-      questions[q].choices.sort(() => 0.5 - Math.random())
+    if (currGameMode === "choices")
+      currQuestions[q].choices.sort(() => 0.5 - Math.random())
+    else
+      setImageRevealText(currQuestions[q].name)
   }
 
-  const doStartGame = (path, gameMode="choices") => {
+  const doStartGame = (path, gm="choices") => {
     const genrand = require('random-seed').create(new Date())
+    currQuestions = (require(`./${path}`)).sort(() => 0.5 - genrand.floatBetween(0.0,1.0)).slice(0, questionCount)
+    setQuestions(currQuestions)
     setScore(0)
     setShowAnswer(false)
     setErrorMessage('')
-    setGameMode(gameMode)
-    setQuestions((require(`./${path}`)).sort(() => 0.5 - genrand.floatBetween(0.0,1.0)).slice(0, questionCount))
+    currGameMode = gm
+    setGameMode(currGameMode)
     setUpQuestion(0)
     setStartGame(true)
   }
@@ -87,11 +94,11 @@ function App() {
               {gameMode === "choices" ? <p class="text-base font-bold">{questions[currentQuestion].question}</p> : null}
               <div class="flex justify-center mt-6">
                 {questions[currentQuestion].image ? (
-                  <img src={questions[currentQuestion].image} alt="Obrázok" onClick={() => revealImage()} data-bs-toggle="collapse" href="#imageRevealCollapse" role="button" aria-expanded="false" aria-controls="imageRevealCollapse" class="my-6" />
+                  <img src={questions[currentQuestion].image} alt="Obrázok" onClick={() => revealImage()} class="my-6" />
                 ) : null}
               </div>
               {gameMode === "images" ? (
-                <div class="collapse mt-4 max-h-72 overflow-y-auto" id="imageRevealCollapse">
+                <div class="mt-4 max-h-72 overflow-y-auto">
                   <div class={`block p-3 rounded-lg shadow-lg text-xl bg-white ${!showAnswer ? 'invisible' : null}`}>
                     {imageRevealText}
                   </div>
