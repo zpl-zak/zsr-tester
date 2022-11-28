@@ -592,7 +592,7 @@ module.exports = [
         "name": "1 dlhý a 1 krátky zvuk"
     },
     {
-        "image": "https://user-images.githubusercontent.com/114129453/204109487-3f874480-c1de-4dd3-8cb3-b840e7e17db4.png",
+        "image": "https://user-images.githubusercontent.com/114129453/204109486-3d74524e-c415-4358-bce1-bf8a33912462.png",
         "name": "1 dlhý a 2 krátke zvuky"
     },
     {
