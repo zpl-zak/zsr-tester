@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 const pickRandomMeme = () => {
   const list = ["Sponsored by Soros", "Tu je dosť priestoru na reklamy.", "Daj banan a šicko porádku!", "npm run deploy", "Intel je cesta!"]
-  return list[Math.floor((Math.random()*this.length))];
+  return list[Math.floor((Math.random()*list.length))];
 }
 
 function App() {
