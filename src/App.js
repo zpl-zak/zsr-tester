@@ -2,7 +2,7 @@ import './App.css';
 import React, { useState } from 'react';
 
 const pickRandomMeme = () => {
-  const list = ["Sponsored by Soros", "Tu je dosť priestoru na reklamy.", "Daj banan a šicko porádku!", "npm run deploy", "Dzięki za whisky, jest smaczna, zajebista!", "Intel je cesta!", "This site is powered by Braňo Mojsej.", "Sorry za komplikácie. Keby niečo, sťažujte sa Alešovi za 5 euri.", "Hosting zabezpečila po pi či americká firma GitHub.", "Daj F5 pre nápovedu.", "Zvolen FTW!", "Za každú 10 minútu, strávenú na stránke, prosím zaplatiť Alešovi 10 centov.", "Kto dá 5 krát za sebou 100% odpovedí správne má u Aleša 20 euro."]
+  const list = ["Sponsored by Soros", "Tu je dosť priestoru na reklamy.", "Daj banan a šicko porádku!", "npm run deploy", "Dzięki za whisky, jest smaczna, zajebista!", "Intel je cesta!", "This site is powered by Braňo Mojsej.", "Sorry za komplikácie. Keby niečo, sťažuj sa Alešovi za 5 euri.", "Hosting zabezpečila po pi či americká firma GitHub.", "Daj F5 pre nápovedu.", "Zvolen FTW!", "restt je slabý kkt", "Za každú 10 minútu, strávenú na stránke, prosím zaplatiť Alešovi 10 centov.", "Ak dáš 5 krát za sebou 100% 40 odpovedí správne máš u Aleša 20 euro."]
   return list[Math.floor((Math.random()*list.length))];
 }
 
