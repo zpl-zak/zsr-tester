@@ -1,8 +1,12 @@
 import './App.css';
 import React, { useState } from 'react';
 
-function App() {
+const pickRandomMeme = () => {
+  const list = ["Sponsored by Soros", "Tu je dosť priestoru na reklamy.", "Daj banan a šicko porádku!", "npm run deploy", "Intel je cesta!"]
+  return list[Math.floor((Math.random()*this.length))];
+}
 
+function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [startGame, setStartGame] = useState(false)
   const [questions, setQuestions] = useState([])
@@ -10,6 +14,8 @@ function App() {
   const [errorMessage, setErrorMessage] = useState('')
   const [showAnswer, setShowAnswer] = useState(false)
   const [questionCount, setQuestionCount] = useState(60)
+  const [gameMode, setGameMode] = useState('choices')
+  const [imageRevealText, setImageRevealText] = useState('')
 
   const answerQuestion = answer => {
     if (showAnswer) return
@@ -23,17 +29,21 @@ function App() {
 
   const setUpQuestion = q => {
     setCurrentQuestion(q)
-    questions[q].choices.sort(() => 0.5 - Math.random())
+    setImageRevealText(questions[q].name)
+
+    if (gameMode === "choices")
+      questions[q].choices.sort(() => 0.5 - Math.random())
   }
 
-  const doStartGame = (path) => {
+  const doStartGame = (path, gameMode="choices") => {
     const genrand = require('random-seed').create(new Date())
     setScore(0)
     setShowAnswer(false)
     setErrorMessage('')
+    setGameMode(gameMode)
     setQuestions((require(`./${path}`)).sort(() => 0.5 - genrand.floatBetween(0.0,1.0)).slice(0, questionCount))
-    setStartGame(true)
     setUpQuestion(0)
+    setStartGame(true)
   }
 
   const doNextQuestion = () => {
@@ -41,17 +51,29 @@ function App() {
     if (nextQuestion < questions.length) {
       setUpQuestion(nextQuestion)
     } else {
-      setErrorMessage(`Z ${questions.length} otázok bolo zodpovedaných správne ${score} (${(score/questions.length) * 100.0}%) otázok. ${(score / questions.length < 0.75) ? "To si dojebal!" : "Gratulujem!"}`)
+      if (gameMode === "choices")
+        setErrorMessage(`Z ${questions.length} otázok bolo zodpovedaných správne ${score} (${(score/questions.length) * 100.0}%) otázok. ${(score / questions.length < 0.75) ? "To si dojebal!" : "Gratulujem!"}`)
       setStartGame(false)
     }
 
     setShowAnswer(false)
   }
 
+  const revealImage = () => {
+    if (gameMode !== "images")
+      return
+    else if (showAnswer) {
+      doNextQuestion()
+      return
+    }
+
+    setShowAnswer(true)
+  }
+
   return (
     <div className="App">
         <main class="my-0 mx-auto max-w-screen-lg text-center">
-        <h2 class="p-6 text-4xl">{startGame ? (`Skóre: ${score}`) : ("Quiz")}</h2>
+        <h2 class="p-6 text-4xl">{startGame && gameMode === "choices" ? (`Skóre: ${score}`) : ("Quiz")}</h2>
         {errorMessage.length ? (
         <div class="bg-blue-100 rounded-lg py-5 px-6 mb-4 text-base text-blue-700 mb-3" role="alert">
           Hláška: {errorMessage}
@@ -60,18 +82,25 @@ function App() {
 
         {startGame ? (
           <>
-            <div class="p-6 shadow-lg rounded-lg bg-gray-100 text-gray-700">
-              <p>Otázka {currentQuestion + 1} z {questions.length}</p>
-              <p class="text-base font-bold">{questions[currentQuestion].question}</p>
+            <div class='p-6 shadow-lg rounded-lg bg-gray-100 text-gray-700'>
+              <p>{gameMode === "choices" ? "Otázka" : "Obrázok"} {currentQuestion + 1} z {questions.length}</p>
+              {gameMode === "choices" ? <p class="text-base font-bold">{questions[currentQuestion].question}</p> : null}
               <div class="flex justify-center mt-6">
                 {questions[currentQuestion].image ? (
-                  <img src={questions[currentQuestion].image} alt="Obrázok" class="my-6" />
+                  <img src={questions[currentQuestion].image} alt="Obrázok" onClick={() => revealImage()} data-bs-toggle="collapse" href="#imageRevealCollapse" role="button" aria-expanded="false" aria-controls="imageRevealCollapse" class="my-6" />
                 ) : null}
               </div>
+              {gameMode === "images" ? (
+                <div class="collapse mt-4 max-h-72 overflow-y-auto" id="imageRevealCollapse">
+                  <div class={`block p-3 rounded-lg shadow-lg text-xl bg-white ${!showAnswer ? 'invisible' : null}`}>
+                    {imageRevealText}
+                  </div>
+                </div>
+                ) : null}
             </div>
             <br/>
             <div class="flex justify-center space-y-2 flex-col">
-            {
+            { gameMode === "choices" ? (
               questions[currentQuestion].choices.map((choice, index) => (
                 choice.text === '-' ? null : (
                 <div>
@@ -82,11 +111,13 @@ function App() {
                     {choice.text}
                   </button>
                 </div>
-                )))
+                )))) : null
             }
             </div>
             <div>
-            { showAnswer ? (<button class="bg-green-700 hover:brightness-110 px-5 my-8 py-5 text-white rounded-lg" onClick={() => doNextQuestion()}>Pokračuj!</button>) : null }
+            { showAnswer ? (<button class="bg-green-700 hover:brightness-110 px-5 my-8 py-5 text-white rounded-lg" onClick={() => doNextQuestion()}>Pokračuj!</button>) : (
+              gameMode === "images" ? (<button class="bg-sky-600 hover:brightness-110 px-5 my-8 py-5 text-white rounded-lg" onClick={() => revealImage()}>Zobraz odpoveď</button>) : null
+            ) }
             </div>
           </>
           ) : (<>
@@ -103,8 +134,14 @@ function App() {
               <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('vm1.js')}>Začni VM1!</button>
               <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('v4.js')}>Začni V4!</button>
               <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('ze.js')}>Začni ZE!</button>
+              <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('img_nav.js', 'images')}>Začni Návestidla a Návesti!</button>
+              <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('img_spd.js', 'images')}>Začni Rýchlostná návestná sústava!</button>
             </div>
           </>)}
+          <p class="text-sm">Made with &#9829; by <a href="https://github.com/zpl-zak/" target="_blank" rel="noreferrer" class="underline">zaklaus</a></p>
+           <p class="text-sm">{
+            pickRandomMeme()
+          }</p>
       </main>
     </div>
   );
