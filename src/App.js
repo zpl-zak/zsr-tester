@@ -2,7 +2,7 @@ import './App.css';
 import React, { useState } from 'react';
 
 const pickRandomMeme = () => {
-  const list = ["Sponsored by Soros", "Tu je dosť priestoru na reklamy.", "Daj banan a šicko porádku!", "npm run deploy", "Dzięki za whisky, jest smaczna, zajebista!", "Intel je cesta!", "This site is powered by Braňo Mojsej.", "Sorry za komplikácie. Keby niečo, sťažuj sa Alešovi za 5 euri.", "Hosting zabezpečila po pi či americká firma GitHub.", "Daj F5 pre nápovedu.", "Zvolen FTW!", "restt je slabý kkt", "Za každú 10 minútu, strávenú na stránke, prosím zaplatiť Alešovi 10 centov.", "Ak dáš 5 krát za sebou 100% 40 odpovedí správne máš u Aleša 20 euro."]
+  const list = ["Sponsored by Soros", "Tu je dosť priestoru na reklamy.", "Text na spodku je rušivý element, preto sa ukáže už iba v menu", "Daj banan a šicko porádku!", "npm run deploy", "Dzięki za whisky, jest smaczna, zajebista!", "Intel je cesta!", "This site is powered by Braňo Mojsej.", "Sorry za komplikácie. Keby niečo, sťažuj sa Alešovi za 5 euri.", "Hosting zabezpečila po pi či americká firma GitHub.", "Daj F5 pre nápovedu.", "Zvolen FTW!", "restt je slabý kkt", "Za každú 10 minútu, strávenú na stránke, prosím zaplatiť Alešovi 10 centov.", "Ak dáš 5 krát za sebou 100% 40 odpovedí správne máš u Aleša 20 euro."]
   return list[Math.floor((Math.random()*list.length))];
 }
 
@@ -146,10 +146,11 @@ function App() {
               <button class="bg-sky-600 hover:brightness-110 px-5 py-3 m-8 text-white rounded-lg" onClick={() => doStartGame('img_spd.js', 'images')}>Začni Rýchlostná návestná sústava!</button>
             </div>
           </>)}
-          <p class="text-sm">Made with &#9829; by <a href="https://github.com/zpl-zak/" target="_blank" rel="noreferrer" class="underline">zaklaus</a></p>
+          { !startGame ? <>
+           <p class="text-sm">Made with &#9829; by <a href="https://github.com/zpl-zak/" target="_blank" rel="noreferrer" class="underline">zaklaus</a></p>
            <p class="text-sm">{
             meme
-          }</p>
+          }</p></> : null}
       </main>
     </div>
   );
