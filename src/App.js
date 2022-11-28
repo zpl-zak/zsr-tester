@@ -2,7 +2,7 @@ import './App.css';
 import React, { useState } from 'react';
 
 const pickRandomMeme = () => {
-  const list = ["Sponsored by Soros", "Tu je dosť priestoru na reklamy.", "Daj banan a šicko porádku!", "npm run deploy", "Intel je cesta!"]
+  const list = ["Sponsored by Soros", "Tu je dosť priestoru na reklamy.", "Daj banan a šicko porádku!", "npm run deploy", "Intel je cesta!", "Sorry za komplikácie. Keby niečo, sťažujte sa Alešovi.", "Zvolen FTW!"]
   return list[Math.floor((Math.random()*list.length))];
 }
 
@@ -17,6 +17,7 @@ function App() {
   const [gameMode, setGameMode] = useState('choices')
   const [imageRevealText, setImageRevealText] = useState('')
   const [questions, setQuestions] = useState([])
+  const [meme] = useState(pickRandomMeme())
 
   let currGameMode = gameMode
   let currQuestions = questions
@@ -147,7 +148,7 @@ function App() {
           </>)}
           <p class="text-sm">Made with &#9829; by <a href="https://github.com/zpl-zak/" target="_blank" rel="noreferrer" class="underline">zaklaus</a></p>
            <p class="text-sm">{
-            pickRandomMeme()
+            meme
           }</p>
       </main>
     </div>
